@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .bg-primary {
+      background-color: #1c1e53;
+    }
+
+    .bg-img{
+      background-color: #1C1E53;
+    }
+    .text-secondary {
+      color: #ffffff;
+    }
+    .text-accent {
+      color: #282938;
+    }
+
+    .text-number{
+      color: #2405F2;
+    }
+
+    .bg-border {
+      background-color: #ececf1;
+    }
+
+    .bg-button {
+      background-color: #fcd980;
+    }
+
+    .bg-border {
+      border: #fcd980;
+    }
+
+    .bg-layar {
+      background-color: #eef4fa;
+    }
+
+    .bg-card {
+      background-color: #f4f6fc;
+    }
+
+    .font-poppins {
+      font-family: "poppins", sans-serif;
+    }
+     .hover-text-yellow-200:hover svg path {
+      stroke: #fde68a; 
+    }
+  </style>
+  <body class="font-poppins">
+    <nav class="flex justify-between items-center bg-primary h-20 px-16 ">
+      <div>
+        <h2 class="text-secondary text-2xl font-bold">[EDUFREE]</h2>
+      </div>
+      <div class="flex items-center gap-16">
+        <div>
+          <ul class="flex gap-10 text-secondary text-[16px]">
+            <li><a class="font-medium hover:text-yellow-200 duration-200" href="">HOME</a></li>
+            <li><a class="font-normal hover:text-yellow-200 duration-200" href="">TENTANG KAMI</a></li>
+            <li><a class="font-normal hover:text-yellow-200 duration-200" href="">KURSUS</a></li>
+            <li><a class="font-normal hover:text-yellow-200 duration-200" href="">FAQ</a></li>
+            <li class="flex items-center gap-2">
+              <a class="flex items-center gap-[6px] hover:text-yellow-200 hover-text-yellow-200 duration-20 " href="">BLOG
+              <span
+                ><svg class="mb-1"
+                  class="w-3 h-3"
+                  width="16"
+                  height="15"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.33334 2.99992H3.00001C2.55798 2.99992 2.13406 3.17551 1.8215 3.48807C1.50894 3.80063 1.33334 4.22456 1.33334 4.66658V12.9999C1.33334 13.4419 1.50894 13.8659 1.8215 14.1784C2.13406 14.491 2.55798 14.6666 3.00001 14.6666H11.3333C11.7754 14.6666 12.1993 14.491 12.5119 14.1784C12.8244 13.8659 13 13.4419 13 12.9999V9.66658M9.66668 1.33325H14.6667M14.6667 1.33325V6.33325M14.6667 1.33325L6.33334 9.66658"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button
+            type="submit"
+            class="border-solid border-2 border-white hover:border-yellow-200 hover:text-yellow-200 duration-200 text-secondary py-3 px-10 rounded h-12 w-32"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- HOME -->
+      <section>
+        <div class="bg-primary h-auto py-16">
+          <div class="mx-auto flex justify-between items-center px-16 gap-28">
+            <div class="w-1/2">
+              <h1 class="text-secondary text-4xl font-bold mb-6">
+                Bangun dan Wujudkan Cita Bersama EDUFREE
+              </h1>
+              <p class="text-secondary text-[16px] font-normal mb-8">
+                EDUFREE adalah sebuah layanan kursus dan pelatihan gratis secara
+                online yang bertujuan untuk membantu kamu meraih cita di bidang
+                teknologi.
+              </p>
+              <div class="flex gap-9">
+                <button
+                  class="bg-button hover:bg-yellow-600 duration-200 text-primary py-3 px-6 rounded font-medium"
+                >
+                  Lihat Kursus
+                </button>
+                <a class="text-secondary flex items-center gap-2 hover:text-yellow-200 duration-200 hover-text-yellow-200" href="#">
+                  Lihat Alur Belajar
+                  <svg
+                    width="20"
+                    height="16"
+                    viewBox="0 0 20 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.5 7.99992H2.5M11.6667 3.33325L17.5 7.99992L11.6667 3.33325ZM17.5 7.99992L11.6667 12.6666L17.5 7.99992Z"
+                      stroke="white "
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="w-1/2">
+              <img
+                src="./asset/img/Group 2621.png"
+                alt="Illustration"
+                class="w-4/3"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="bg-layar py-20">
+          <div class="mx-16 flex">
+          <div class="flex gap-6">
+            <div>
+              <h3 class="font-bold text-3xl">21.000+</h3>
+              <p class="font-normal text-sm text-accent 
+              ">Siswa terdaftar</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-3xl">100+</h3>
+              <p class="font-normal text-sm text-accent 
+              ">Instruktur Ahli</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-3xl">150+</h3>
+              <p class="font-normal text-sm text-accent 
+              ">Kursus Gratis</p>
+            </div>
+          </div>
+          <div class="flex gap-8 ml-12 items-center mt-6">
+            <div class="flex gap-3 items-center">
+              <span
+                ><svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.8 22C11.8 22.7956 11.5471 23.5587 11.0971 24.1213C10.647 24.6839 10.0365 25 9.4 25C8.76348 25 8.15303 24.6839 7.70294 24.1213C7.25286 23.5587 7 22.7956 7 22C7 21.2044 7.25286 20.4413 7.70294 19.8787C8.15303 19.3161 8.76348 19 9.4 19C10.0365 19 10.647 19.3161 11.0971 19.8787C11.5471 20.4413 11.8 21.2044 11.8 22ZM23 22C23 22.7956 22.7471 23.5587 22.2971 24.1213C21.847 24.6839 21.2365 25 20.6 25C19.9635 25 19.353 24.6839 18.9029 24.1213C18.4529 23.5587 18.2 22.7956 18.2 22C18.2 21.2044 18.4529 20.4413 18.9029 19.8787C19.353 19.3161 19.9635 19 20.6 19C21.2365 19 21.847 19.3161 22.2971 19.8787C22.7471 20.4413 23 21.2044 23 22Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M4.39921 6C4.0279 6 3.67181 6.1475 3.40926 6.41005C3.14671 6.6726 2.99921 7.0287 2.99921 7.4V21.4C2.99921 21.7713 3.14671 22.1274 3.40926 22.3899C3.67181 22.6525 4.0279 22.8 4.39921 22.8H5.86921C6.02987 22.0088 6.45912 21.2975 7.08423 20.7865C7.70933 20.2756 8.49186 19.9965 9.29921 19.9965C10.1066 19.9965 10.8891 20.2756 11.5142 20.7865C12.1393 21.2975 12.5685 22.0088 12.7292 22.8H14.1992C14.5705 22.8 14.9266 22.6525 15.1892 22.3899C15.4517 22.1274 15.5992 21.7713 15.5992 21.4V7.4C15.5992 7.0287 15.4517 6.6726 15.1892 6.41005C14.9266 6.1475 14.5705 6 14.1992 6H4.39921ZM19.7992 10.2C19.4279 10.2 19.0718 10.3475 18.8093 10.6101C18.5467 10.8726 18.3992 11.2287 18.3992 11.6V20.07C18.8496 19.978 19.3138 19.9756 19.7652 20.063C20.2165 20.1504 20.6462 20.3259 21.0298 20.5794C21.4133 20.8329 21.7431 21.1595 22.0004 21.5405C22.2577 21.9216 22.4374 22.3495 22.5292 22.8H23.9992C24.3705 22.8 24.7266 22.6525 24.9892 22.3899C25.2517 22.1274 25.3992 21.7713 25.3992 21.4L25.1984 14.4C25.1983 14.0288 25.1984 10.4 25.1984 10.4H22.1984C22.1984 10.4 21.5705 10.2001 21.1992 10.2H19.7992Z"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+              <p class="font-bold text-2xl">LOREM</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.59999 0.800049C2.85738 0.800049 2.14519 1.09505 1.62009 1.62015C1.09499 2.14525 0.799988 2.85744 0.799988 3.60005V19C0.799988 20.114 1.24249 21.1822 2.03014 21.9699C2.81779 22.7576 3.88608 23.2 4.99999 23.2C6.1139 23.2 7.18218 22.7576 7.96984 21.9699C8.75749 21.1822 9.19999 20.114 9.19999 19V3.60005C9.19999 2.85744 8.90499 2.14525 8.37989 1.62015C7.85478 1.09505 7.14259 0.800049 6.39999 0.800049H3.59999ZM4.99999 20.4C5.37129 20.4 5.72739 20.2525 5.98994 19.99C6.25249 19.7274 6.39999 19.3714 6.39999 19C6.39999 18.6287 6.25249 18.2726 5.98994 18.0101C5.72739 17.7475 5.37129 17.6 4.99999 17.6C4.62868 17.6 4.27259 17.7475 4.01004 18.0101C3.74749 18.2726 3.59999 18.6287 3.59999 19C3.59999 19.3714 3.74749 19.7274 4.01004 19.99C4.27259 20.2525 4.62868 20.4 4.99999 20.4ZM12 17.9402L18.86 11.0802C19.3849 10.5552 19.6798 9.84311 19.6798 9.10065C19.6798 8.35819 19.3849 7.64613 18.86 7.12105L16.879 5.14005C16.3539 4.61513 15.6418 4.32025 14.8994 4.32025C14.1569 4.32025 13.4449 4.61513 12.9198 5.14005L12 6.05985V17.9402ZM20.4 23.2H10.6994L19.0994 14.8H20.4C21.1426 14.8 21.8548 15.095 22.3799 15.6202C22.905 16.1453 23.2 16.8574 23.2 17.6V20.4C23.2 21.1427 22.905 21.8548 22.3799 22.3799C21.8548 22.905 21.1426 23.2 20.4 23.2Z"
+                    fill="#282938"
+                  />
+                </svg>
+              </span>
+              <p class="font-bold text-2xl">DITLANCE</p>
+            </div>
+            <div class="flex gap-2 items-center">
+              <span>
+                <svg
+                  width="28"
+                  height="34"
+                  viewBox="0 0 28 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_d_1_236)">
+                    <path
+                      d="M15.4 23.8C15.4001 24.0386 15.4612 24.2731 15.5775 24.4815C15.6937 24.6898 15.8612 24.8649 16.0642 24.9903C16.2671 25.1157 16.4987 25.1871 16.737 25.1979C16.9753 25.2086 17.2124 25.1583 17.4258 25.0516L23.0258 22.2516C23.2583 22.1354 23.4539 21.9568 23.5906 21.7358C23.7274 21.5147 23.7999 21.26 23.8 21V12.9304C23.7999 12.6919 23.7388 12.4573 23.6226 12.249C23.5063 12.0407 23.3388 11.8655 23.1359 11.7402C22.9329 11.6148 22.7013 11.5433 22.463 11.5326C22.2247 11.5219 21.9876 11.5722 21.7742 11.6788L16.1742 14.4788C15.9417 14.595 15.7461 14.7736 15.6094 14.9947C15.4726 15.2158 15.4002 15.4705 15.4 15.7304V23.8ZM21.2954 8.78643C21.5276 8.67004 21.7229 8.49133 21.8594 8.27029C21.9958 8.04925 22.0681 7.7946 22.0681 7.53483C22.0681 7.27506 21.9958 7.02042 21.8594 6.79938C21.7229 6.57834 21.5276 6.39963 21.2954 6.28323L14.6258 2.94843C14.4315 2.85133 14.2172 2.80078 14 2.80078C13.7828 2.80078 13.5685 2.85133 13.3742 2.94843L6.70461 6.28323C6.47238 6.39963 6.27711 6.57834 6.14064 6.79938C6.00418 7.02042 5.93191 7.27506 5.93191 7.53483C5.93191 7.7946 6.00418 8.04925 6.14064 8.27029C6.27711 8.49133 6.47238 8.67004 6.70461 8.78643L13.3742 12.1212C13.5685 12.2183 13.7828 12.2689 14 12.2689C14.2172 12.2689 14.4315 12.2183 14.6258 12.1212L21.2954 8.78643ZM6.22581 11.6788C6.01242 11.5722 5.77533 11.5219 5.53702 11.5326C5.29871 11.5433 5.0671 11.6148 4.86416 11.7402C4.66122 11.8655 4.49369 12.0407 4.37745 12.249C4.26122 12.4573 4.20014 12.6919 4.20001 12.9304V21C4.20015 21.26 4.27265 21.5147 4.40939 21.7358C4.54612 21.9568 4.7417 22.1354 4.97421 22.2516L10.5742 25.0516C10.7876 25.1583 11.0247 25.2086 11.263 25.1979C11.5013 25.1871 11.7329 25.1157 11.9359 24.9903C12.1388 24.8649 12.3063 24.6898 12.4226 24.4815C12.5388 24.2731 12.5999 24.0386 12.6 23.8V15.7304C12.5999 15.4705 12.5274 15.2158 12.3906 14.9947C12.2539 14.7736 12.0583 14.595 11.8258 14.4788L6.22581 11.6788Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_1_236"
+                      x="-4"
+                      y="0"
+                      width="36"
+                      height="36"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dy="4" />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_1_236"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_1_236"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </span>
+              <p class="font-bold text-2xl">OWTHEST</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 23.2C14.9704 23.2 17.8192 22.0201 19.9196 19.9196C22.02 17.8192 23.2 14.9705 23.2 12C23.2 9.02962 22.02 6.18086 19.9196 4.08045C17.8192 1.98005 14.9704 0.800049 12 0.800049C9.02956 0.800049 6.1808 1.98005 4.08039 4.08045C1.97998 6.18086 0.799988 9.02962 0.799988 12C0.799988 14.9705 1.97998 17.8192 4.08039 19.9196C6.1808 22.0201 9.02956 23.2 12 23.2ZM4.06479 9.23785C4.58459 7.74925 5.51209 6.43659 6.74159 5.44945C7.11679 6.02205 7.76359 6.40005 8.49999 6.40005C9.05694 6.40005 9.59109 6.6213 9.98491 7.01512C10.3787 7.40895 10.6 7.94309 10.6 8.50005V9.20005C10.6 9.94265 10.895 10.6548 11.4201 11.1799C11.9452 11.705 12.6574 12 13.4 12C14.1426 12 14.8548 11.705 15.3799 11.1799C15.905 10.6548 16.2 9.94265 16.2 9.20005C16.1998 8.57344 16.4097 7.96487 16.7963 7.4717C17.1829 6.97854 17.7237 6.62929 18.3322 6.47985C19.6682 8.00818 20.4031 9.97008 20.4 12C20.4 12.476 20.3608 12.945 20.2838 13.4H19C18.2574 13.4 17.5452 13.695 17.0201 14.2201C16.495 14.7453 16.2 15.4574 16.2 16.2V19.2758C14.9236 20.0144 13.4746 20.4022 12 20.4V17.6C12 16.8574 11.705 16.1453 11.1799 15.6202C10.6548 15.095 9.94259 14.8 9.19999 14.8C8.45738 14.8 7.74519 14.505 7.22009 13.9799C6.69499 13.4548 6.39999 12.7427 6.39999 12C6.40024 11.3378 6.16578 10.697 5.73825 10.1913C5.31072 9.68559 4.7178 9.34777 4.06479 9.23785Z"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+              <p class="font-bold text-2xl">NEOVASI</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span>
+                <svg
+                  width="20"
+                  height="26"
+                  viewBox="0 0 20 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.82 0.464362C12.1042 0.553741 12.3525 0.731456 12.5287 0.97166C12.705 1.21186 12.8 1.50203 12.8 1.79996V8.79996H18.4C18.6561 8.79985 18.9073 8.86998 19.1263 9.00272C19.3453 9.13546 19.5237 9.32572 19.6421 9.5528C19.7604 9.77988 19.8143 10.0351 19.7977 10.2906C19.7811 10.5462 19.6947 10.7923 19.548 11.0022L9.74799 25.0022C9.57743 25.2465 9.33336 25.4301 9.05127 25.5261C8.76918 25.6222 8.46381 25.6257 8.17957 25.5362C7.89533 25.4467 7.64706 25.2689 7.47088 25.0286C7.2947 24.7882 7.1998 24.498 7.19999 24.2V17.2H1.59999C1.34391 17.2001 1.0927 17.1299 0.873699 16.9972C0.654701 16.8645 0.476305 16.6742 0.357928 16.4471C0.23955 16.22 0.185726 15.9648 0.202311 15.7093C0.218897 15.4537 0.305257 15.2076 0.451994 14.9978L10.252 0.997762C10.4228 0.753864 10.6669 0.57078 10.9489 0.475109C11.2309 0.379438 11.536 0.376164 11.82 0.465762V0.464362Z"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+              <p class="font-bold text-2xl">ONAGO</p>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BERGABUNG -->
+      <section>
+        <div class="mx-16">
+          <h1 class="font-bold text-3xl text-center mt-32 w-2/5 mx-auto mb-14">
+            Keuntungan Bergabung Dengan E-Learning EDUFREE
+          </h1>
+          <div class="grid grid-cols-3 gap-10">
+            <div class="p-6 bg-card">
+              <div class="p-8">
+                <svg
+                  class="mb-5"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_1_295"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="40"
+                    height="40"
+                  >
+                    <rect width="40" height="40" rx="5" fill="#2405F2" />
+                  </mask>
+                  <g mask="url(#mask0_1_295)">
+                    <rect width="40" height="40" rx="5" fill="#2405F2" />
+                    <rect
+                      x="-31"
+                      y="14"
+                      width="40"
+                      height="40"
+                      rx="5"
+                      fill="#FCD980"
+                    />
+                  </g>
+                  <path
+                    d="M19.7392 18.58V15.4H25.2792V30H21.7192V18.58H19.7392Z"
+                    fill="white"
+                  />
+                </svg>
+                <h2 class="text-2xl font-medium mb-3">Kursus Gratis</h2>
+                <p class="text-sm text-accent">
+                  Kami menyediakan beberapa kursus gratis untuk menunjang
+                  ketersediaan pendidikan untuk masyarakat kurang mampu
+                </p>
+              </div>
+            </div>
+            <div class="p-6 bg-card">
+              <div class="p-8">
+                <svg
+                  class="mb-5"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_1_275"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="40"
+                    height="40"
+                  >
+                    <rect width="40" height="40" rx="5" fill="#2405F2" />
+                  </mask>
+                  <g mask="url(#mask0_1_275)">
+                    <rect width="40" height="40" rx="5" fill="#2405F2" />
+                    <rect
+                      x="-31"
+                      y="14"
+                      width="40"
+                      height="40"
+                      rx="5"
+                      fill="#FCD980"
+                    />
+                  </g>
+                  <path
+                    d="M19.1392 25.84C20.4192 24.7733 21.4392 23.8867 22.1992 23.18C22.9592 22.46 23.5926 21.7133 24.0992 20.94C24.6059 20.1667 24.8592 19.4067 24.8592 18.66C24.8592 17.98 24.6992 17.4467 24.3792 17.06C24.0592 16.6733 23.5659 16.48 22.8992 16.48C22.2326 16.48 21.7192 16.7067 21.3592 17.16C20.9992 17.6 20.8126 18.2067 20.7992 18.98H18.0792C18.1326 17.38 18.6059 16.1667 19.4992 15.34C20.4059 14.5133 21.5526 14.1 22.9392 14.1C24.4592 14.1 25.6259 14.5067 26.4392 15.32C27.2526 16.12 27.6592 17.18 27.6592 18.5C27.6592 19.54 27.3792 20.5333 26.8192 21.48C26.2592 22.4267 25.6192 23.2533 24.8992 23.96C24.1792 24.6533 23.2392 25.4933 22.0792 26.48H27.9792V28.8H18.0992V26.72L19.1392 25.84Z"
+                    fill="white"
+                  />
+                </svg>
+                <h2 class="text-2xl font-medium mb-3">Akses Selamanya</h2>
+                <p class="text-sm text-accent">
+                  Semua kursus yang telah kamu daftar bisa diakses selamanya
+                  sehingga belajar kamu lebih nyaman dan tidak terburu-buru
+                </p>
+              </div>
+            </div>
+            <div class="bg-card p-6">
+              <div class="p-7">
+                <svg
+                  class="mb-5"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_1_254"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="40"
+                    height="40"
+                  >
+                    <rect width="40" height="40" rx="5" fill="#2405F2" />
+                  </mask>
+                  <g mask="url(#mask0_1_254)">
+                    <rect width="40" height="40" rx="5" fill="#2405F2" />
+                    <rect
+                      x="-31"
+                      y="14"
+                      width="40"
+                      height="40"
+                      rx="5"
+                      fill="#FCD980"
+                    />
+                  </g>
+                  <path
+                    d="M18.2992 18.26C18.3659 16.9267 18.8326 15.9 19.6992 15.18C20.5792 14.4467 21.7326 14.08 23.1592 14.08C24.1326 14.08 24.9659 14.2533 25.6592 14.6C26.3526 14.9333 26.8726 15.3933 27.2192 15.98C27.5792 16.5533 27.7592 17.2067 27.7592 17.94C27.7592 18.78 27.5392 19.4933 27.0992 20.08C26.6726 20.6533 26.1592 21.04 25.5592 21.24V21.32C26.3326 21.56 26.9326 21.9867 27.3592 22.6C27.7992 23.2133 28.0192 24 28.0192 24.96C28.0192 25.76 27.8326 26.4733 27.4592 27.1C27.0992 27.7267 26.5592 28.22 25.8392 28.58C25.1326 28.9267 24.2792 29.1 23.2792 29.1C21.7726 29.1 20.5459 28.72 19.5992 27.96C18.6526 27.2 18.1526 26.08 18.0992 24.6H20.8192C20.8459 25.2533 21.0659 25.78 21.4792 26.18C21.9059 26.5667 22.4859 26.76 23.2192 26.76C23.8992 26.76 24.4192 26.5733 24.7792 26.2C25.1526 25.8133 25.3392 25.32 25.3392 24.72C25.3392 23.92 25.0859 23.3467 24.5792 23C24.0726 22.6533 23.2859 22.48 22.2192 22.48H21.6392V20.18H22.2192C24.1126 20.18 25.0592 19.5467 25.0592 18.28C25.0592 17.7067 24.8859 17.26 24.5392 16.94C24.2059 16.62 23.7192 16.46 23.0792 16.46C22.4526 16.46 21.9659 16.6333 21.6192 16.98C21.2859 17.3133 21.0926 17.74 21.0392 18.26H18.2992Z"
+                    fill="white"
+                  />
+                </svg>
+                <h2 class="text-2xl font-medium mb-3">Grup Konsultasi</h2>
+                <p class="text-sm text-accent">
+                  Terdapat grup konsultasi yang berguna jika kamu ingin
+                  menanyakan suatu pertanyaan dan kamu juga bisa mebuka diskusi
+                  baru
+                </p>
+              </div>
+            </div>
+            <div class="bg-card p-6">
+              <div class="p-8">
+                <svg
+                  class="mb-5"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_1_305"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="40"
+                    height="40"
+                  >
+                    <rect width="40" height="40" rx="5" fill="#2405F2" />
+                  </mask>
+                  <g mask="url(#mask0_1_305)">
+                    <rect width="40" height="40" rx="5" fill="#2405F2" />
+                    <rect
+                      x="-31"
+                      y="14"
+                      width="40"
+                      height="40"
+                      rx="5"
+                      fill="#FCD980"
+                    />
+                  </g>
+                  <path
+                    d="M17.1392 27.16V24.96L23.6792 15.6H26.9392V24.72H28.6992V27.16H26.9392V30H24.1392V27.16H17.1392ZM24.3192 18.6L20.2192 24.72H24.3192V18.6Z"
+                    fill="white"
+                  />
+                </svg>
+                <h2 class="text-2xl font-medium mb-3">
+                  Sertifikat dan Portofolio
+                </h2>
+                <p class="text-sm text-accent">
+                  Setelah menyelesaikan kursus kamu akan mendapatkan sertifikat
+                  serta portofolio dari project kursus yang telah diselesaikan
+                </p>
+              </div>
+            </div>
+            <div class="bg-card p-6">
+              <div class="p-8">
+                <svg
+                  class="mb-5"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_1_285"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="40"
+                    height="40"
+                  >
+                    <rect width="40" height="40" rx="5" fill="#2405F2" />
+                  </mask>
+                  <g mask="url(#mask0_1_285)">
+                    <rect width="40" height="40" rx="5" fill="#2405F2" />
+                    <rect
+                      x="-31"
+                      y="14"
+                      width="40"
+                      height="40"
+                      rx="5"
+                      fill="#FCD980"
+                    />
+                  </g>
+                  <path
+                    d="M28.0592 16.84H21.5792V20.26C21.8592 19.9133 22.2592 19.6333 22.7792 19.42C23.2992 19.1933 23.8526 19.08 24.4392 19.08C25.5059 19.08 26.3792 19.3133 27.0592 19.78C27.7392 20.2467 28.2326 20.8467 28.5392 21.58C28.8459 22.3 28.9992 23.0733 28.9992 23.9C28.9992 25.4333 28.5592 26.6667 27.6792 27.6C26.8126 28.5333 25.5726 29 23.9592 29C22.4392 29 21.2259 28.62 20.3192 27.86C19.4126 27.1 18.8992 26.1067 18.7792 24.88H21.4992C21.6192 25.4133 21.8859 25.84 22.2992 26.16C22.7259 26.48 23.2659 26.64 23.9192 26.64C24.7059 26.64 25.2992 26.3933 25.6992 25.9C26.0992 25.4067 26.2992 24.7533 26.2992 23.94C26.2992 23.1133 26.0926 22.4867 25.6792 22.06C25.2792 21.62 24.6859 21.4 23.8992 21.4C23.3392 21.4 22.8726 21.54 22.4992 21.82C22.1259 22.1 21.8592 22.4733 21.6992 22.94H19.0192V14.38H28.0592V16.84Z"
+                    fill="white"
+                  />
+                </svg>
+                <h2 class="text-2xl font-medium mb-3">Belajar Lebih Terarah</h2>
+                <p class="text-sm text-accent">
+                  Kursus menyediakan kursus dari level dasar hingga expert
+                  sehingga semua bisa belajar dengan layanan yang kami sediakan
+                </p>
+              </div>
+            </div>
+            <div class="bg-card p-6">
+              <div class="p-8">
+                <svg
+                  class="mb-5"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_1_265"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="40"
+                    height="40"
+                  >
+                    <rect width="40" height="40" rx="5" fill="#2405F2" />
+                  </mask>
+                  <g mask="url(#mask0_1_265)">
+                    <rect width="40" height="40" rx="5" fill="#2405F2" />
+                    <rect
+                      x="-31"
+                      y="14"
+                      width="40"
+                      height="40"
+                      rx="5"
+                      fill="#FCD980"
+                    />
+                  </g>
+                  <path
+                    d="M25.8192 18.06C25.6859 17.5 25.4526 17.08 25.1192 16.8C24.7992 16.52 24.3326 16.38 23.7192 16.38C22.7992 16.38 22.1192 16.7533 21.6792 17.5C21.2526 18.2333 21.0326 19.4333 21.0192 21.1C21.3392 20.5667 21.8059 20.1533 22.4192 19.86C23.0326 19.5533 23.6992 19.4 24.4192 19.4C25.2859 19.4 26.0526 19.5867 26.7192 19.96C27.3859 20.3333 27.9059 20.88 28.2792 21.6C28.6526 22.3067 28.8392 23.16 28.8392 24.16C28.8392 25.1067 28.6459 25.9533 28.2592 26.7C27.8859 27.4333 27.3326 28.0067 26.5992 28.42C25.8659 28.8333 24.9926 29.04 23.9792 29.04C22.5926 29.04 21.4992 28.7333 20.6992 28.12C19.9126 27.5067 19.3592 26.6533 19.0392 25.56C18.7326 24.4533 18.5792 23.0933 18.5792 21.48C18.5792 19.04 18.9992 17.2 19.8392 15.96C20.6792 14.7067 22.0059 14.08 23.8192 14.08C25.2192 14.08 26.3059 14.46 27.0792 15.22C27.8526 15.98 28.2992 16.9267 28.4192 18.06H25.8192ZM23.7792 21.7C23.0726 21.7 22.4792 21.9067 21.9992 22.32C21.5192 22.7333 21.2792 23.3333 21.2792 24.12C21.2792 24.9067 21.4992 25.5267 21.9392 25.98C22.3926 26.4333 23.0259 26.66 23.8392 26.66C24.5592 26.66 25.1259 26.44 25.5392 26C25.9659 25.56 26.1792 24.9667 26.1792 24.22C26.1792 23.4467 25.9726 22.8333 25.5592 22.38C25.1592 21.9267 24.5659 21.7 23.7792 21.7Z"
+                    fill="white"
+                  />
+                </svg>
+                <h2 class="text-2xl font-medium mb-3">
+                  Instruktur Berpengalaman
+                </h2>
+                <p class="text-sm text-accent">
+                  Kami mempunyai instruktur berpengalaman yang diambil dari
+                  dunia industri yang tak diragukan lagi pengalamannya
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TENTANG KAMI -->
+      <section>
+        <div class="mt-36 flex justify-between mx-16 gap-16 ">
+          <div class=" flex flex-col justify-center w-2/4 ">
+            <p class="font-normal text-lg mb-4 text-accent">Tentang Kami</p>
+            <h1 class="font-bold text-[38px] mb-4">
+              EDUFREE Layanan E-Learning Gratis Untuk Membantu Kamu Bertumbuh
+            </h1>
+            <p class="font-normal text-sm text-accent w-[500px] ">
+              Edufree diharapkann bisa menjadi layanan yang bermanfaat bagi
+              kedepanya dalam bidang pendidikan
+            </p>
+          </div>
+          <div>
+            <img class="w-[575px] h-[398px]"
+              class="max-w-xl w-[575px]"
+              src="./asset/img/unsplash_vbxyFxlgpjM.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <!-- KURSUS -->
+        <div class="mt-36 border-b-2 mx-16">
+          <div class="flex items-center justify-between mb-7">
+            <h1 class="font-semibold text-3xl w-1/3 ">
+              Rekomendasi Kursus Untuk Kamu
+            </h1>
+            <div class="flex gap-12">
+              <div class="flex items-center gap-2">
+                <a class="font-medium" href="">Kategori</a
+                ><span
+                  ><svg
+                    width="16"
+                    height="9"
+                    viewBox="0 0 16 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 1L8 8L1 1"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div>
+                <button
+                  class="font-medium bg-button border-solid hover:bg-yellow-600 py-4 px-10 rounded">
+                  Lihat Semua
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GAMBAR KURSUS -->
+        <div class="mt-16 grid grid-cols-3 max-w-7xl mx-16 gap-16">
+          <!-- kursus 1 -->
+          <div>
+            <div class="relative">
+              <img src="asset/img/unsplash_m_HRfLhgABo.png" alt=""/>
+              <div class="absolute top-52 right-3 z-10 ">
+              <svg
+                width="63"
+                height="25"
+                viewBox="0 0 63 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 12.5C0 5.59644 5.59644 0 12.5 0H50.5C57.4036 0 63 5.59644 63 12.5V12.5C63 19.4036 57.4036 25 50.5 25H12.5C5.59644 25 0 19.4036 0 12.5V12.5Z"
+                  fill="#1C1E53"
+                />
+                <path
+                  d="M19.1441 6.63431C19.4141 5.80541 20.5868 5.80541 20.8559 6.63431L21.8189 9.59711C21.8778 9.77755 21.9921 9.93477 22.1457 10.0463C22.2992 10.1578 22.4841 10.218 22.6739 10.2181H25.7897C26.6618 10.2181 27.0236 11.3341 26.3189 11.8471L23.7989 13.6777C23.6451 13.7893 23.5305 13.9468 23.4716 14.1276C23.4128 14.3083 23.4127 14.5031 23.4713 14.6839L24.4343 17.6467C24.7043 18.4756 23.7548 19.1659 23.0483 18.6529L20.5283 16.8223C20.3746 16.7107 20.1895 16.6506 19.9996 16.6506C19.8096 16.6506 19.6245 16.7107 19.4708 16.8223L16.9508 18.6529C16.2452 19.1659 15.2966 18.4756 15.5657 17.6467L16.5287 14.6839C16.5874 14.5031 16.5873 14.3083 16.5284 14.1276C16.4696 13.9468 16.355 13.7893 16.2011 13.6777L13.682 11.848C12.9773 11.335 13.34 10.219 14.2112 10.219H17.3261C17.5161 10.2191 17.7012 10.159 17.8549 10.0475C18.0086 9.93592 18.1231 9.77859 18.182 9.59801L19.145 6.63521L19.1441 6.63431Z"
+                  fill="#FCD980"
+                  />
+                  <path
+                  d="M33.552 15.176V14.144L37.584 8.36H39.24V13.988H40.356V15.176H39.24V17H37.896V15.176H33.552ZM37.956 9.752L35.124 13.988H37.956V9.752ZM43.1695 15.356L41.7175 18.668H40.8295L41.6815 15.356H43.1695ZM45.8888 14.624C45.9688 15.024 46.1408 15.328 46.4048 15.536C46.6688 15.744 47.0248 15.848 47.4728 15.848C48.0408 15.848 48.4568 15.624 48.7208 15.176C48.9848 14.728 49.1168 13.964 49.1168 12.884C48.9248 13.156 48.6528 13.368 48.3008 13.52C47.9568 13.664 47.5808 13.736 47.1728 13.736C46.6528 13.736 46.1808 13.632 45.7568 13.424C45.3328 13.208 44.9968 12.892 44.7488 12.476C44.5088 12.052 44.3888 11.54 44.3888 10.94C44.3888 10.06 44.6448 9.36 45.1568 8.84C45.6768 8.312 46.3888 8.048 47.2928 8.048C48.3808 8.048 49.1528 8.412 49.6088 9.14C50.0728 9.86 50.3048 10.968 50.3048 12.464C50.3048 13.496 50.2168 14.34 50.0408 14.996C49.8728 15.652 49.5768 16.148 49.1528 16.484C48.7288 16.82 48.1408 16.988 47.3888 16.988C46.5328 16.988 45.8728 16.764 45.4088 16.316C44.9448 15.868 44.6848 15.304 44.6288 14.624H45.8888ZM47.4128 12.584C47.8928 12.584 48.2688 12.436 48.5408 12.14C48.8208 11.836 48.9608 11.436 48.9608 10.94C48.9608 10.388 48.8128 9.96 48.5168 9.656C48.2288 9.344 47.8328 9.188 47.3288 9.188C46.8248 9.188 46.4248 9.348 46.1288 9.668C45.8408 9.98 45.6968 10.392 45.6968 10.904C45.6968 11.392 45.8368 11.796 46.1168 12.116C46.4048 12.428 46.8368 12.584 47.4128 12.584Z"
+                  fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="py-6 px-4">
+              <h1 class="font-bold text-2xl">Dasar Pemrograman WEB</h1>
+              <p class="font-normal text-sm mb-6 text-accent">
+                Materi pembelajarn mengenai pembuatan website tingkat pemula
+              </p>
+              <div class="flex gap-4 items-center text-accent">
+                <div class="flex gap-2">
+                  <span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 6V10L13 13L10 6ZM19 10C19 11.1819 18.7672 12.3522 18.3149 13.4442C17.8626 14.5361 17.1997 15.5282 16.364 16.364C15.5282 17.1997 14.5361 17.8626 13.4442 18.3149C12.3522 18.7672 11.1819 19 10 19C8.8181 19 7.64778 18.7672 6.55585 18.3149C5.46392 17.8626 4.47177 17.1997 3.63604 16.364C2.80031 15.5282 2.13738 14.5361 1.68508 13.4442C1.23279 12.3522 1 11.1819 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <p class="font-normal text-sm">4,5 Jam</p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.8">
+                        <path
+                          d="M14.752 11.168L11.555 9.036C11.4043 8.93542 11.229 8.8777 11.048 8.869C10.867 8.8603 10.687 8.90094 10.5274 8.98659C10.3677 9.07224 10.2342 9.19967 10.1414 9.35527C10.0485 9.51087 9.99961 9.68878 10 9.86999V14.133C9.99998 14.314 10.0491 14.4917 10.1421 14.647C10.2352 14.8023 10.3686 14.9295 10.5282 15.0149C10.6879 15.1003 10.8677 15.1408 11.0485 15.132C11.2293 15.1232 11.4044 15.0655 11.555 14.965L14.752 12.833C14.889 12.7417 15.0013 12.618 15.0789 12.4728C15.1566 12.3277 15.1972 12.1656 15.1972 12.001C15.1972 11.8364 15.1566 11.6743 15.0789 11.5292C15.0013 11.384 14.889 11.2603 14.752 11.169V11.168Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                  <p class="font-normal text-sm">20 Video</p>
+                </div>
+                <div class="flex gap-2">
+                  <span>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9 2.62833C9.44787 2.12059 10.0397 1.76126 10.6968 1.59816C11.354 1.43507 12.0451 1.47594 12.6785 1.71533C13.3118 1.95473 13.8572 2.38131 14.2421 2.9383C14.627 3.49529 14.8332 4.15629 14.8332 4.83333C14.8332 5.51038 14.627 6.17138 14.2421 6.72837C13.8572 7.28536 13.3118 7.71193 12.6785 7.95133C12.0451 8.19073 11.354 8.2316 10.6968 8.06851C10.0397 7.90541 9.44787 7.54608 9 7.03833V2.62833ZM11.5 16.5H1.5V15.6667C1.5 14.3406 2.02678 13.0688 2.96447 12.1311C3.90215 11.1935 5.17392 10.6667 6.5 10.6667C7.82608 10.6667 9.09785 11.1935 10.0355 12.1311C10.9732 13.0688 11.5 14.3406 11.5 15.6667V16.5ZM11.5 16.5H16.5V15.6667C16.5001 14.7889 16.2692 13.9266 15.8304 13.1664C15.3916 12.4062 14.7604 11.7749 14.0003 11.336C13.2402 10.8971 12.3779 10.666 11.5002 10.666C10.6224 10.6659 9.76015 10.897 9 11.3358L11.5 16.5ZM9.83333 4.83333C9.83333 5.71739 9.48214 6.56524 8.85702 7.19036C8.2319 7.81548 7.38405 8.16667 6.5 8.16667C5.61594 8.16667 4.7681 7.81548 4.14298 7.19036C3.51786 6.56524 3.16667 5.71739 3.16667 4.83333C3.16667 3.94928 3.51786 3.10143 4.14298 2.47631C4.7681 1.85119 5.61594 1.5 6.5 1.5C7.38405 1.5 8.2319 1.85119 8.85702 2.47631C9.48214 3.10143 9.83333 3.94928 9.83333 4.83333V4.83333Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <p class="font-normal text-sm">1.900 Siswa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- kursus 2 -->
+          <div>
+            <div class="relative">
+              <img src="asset/img/pexels-lukas-590016 1.png" alt=""/>
+              <div class="absolute top-52 right-3 z-10 ">
+              <svg
+                width="63"
+                height="25"
+                viewBox="0 0 63 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 12.5C0 5.59644 5.59644 0 12.5 0H50.5C57.4036 0 63 5.59644 63 12.5V12.5C63 19.4036 57.4036 25 50.5 25H12.5C5.59644 25 0 19.4036 0 12.5V12.5Z"
+                  fill="#1C1E53"
+                />
+                <path
+                  d="M19.1441 6.63431C19.4141 5.80541 20.5868 5.80541 20.8559 6.63431L21.8189 9.59711C21.8778 9.77755 21.9921 9.93477 22.1457 10.0463C22.2992 10.1578 22.4841 10.218 22.6739 10.2181H25.7897C26.6618 10.2181 27.0236 11.3341 26.3189 11.8471L23.7989 13.6777C23.6451 13.7893 23.5305 13.9468 23.4716 14.1276C23.4128 14.3083 23.4127 14.5031 23.4713 14.6839L24.4343 17.6467C24.7043 18.4756 23.7548 19.1659 23.0483 18.6529L20.5283 16.8223C20.3746 16.7107 20.1895 16.6506 19.9996 16.6506C19.8096 16.6506 19.6245 16.7107 19.4708 16.8223L16.9508 18.6529C16.2452 19.1659 15.2966 18.4756 15.5657 17.6467L16.5287 14.6839C16.5874 14.5031 16.5873 14.3083 16.5284 14.1276C16.4696 13.9468 16.355 13.7893 16.2011 13.6777L13.682 11.848C12.9773 11.335 13.34 10.219 14.2112 10.219H17.3261C17.5161 10.2191 17.7012 10.159 17.8549 10.0475C18.0086 9.93592 18.1231 9.77859 18.182 9.59801L19.145 6.63521L19.1441 6.63431Z"
+                  fill="#FCD980"
+                  />
+                  <path
+                  d="M33.552 15.176V14.144L37.584 8.36H39.24V13.988H40.356V15.176H39.24V17H37.896V15.176H33.552ZM37.956 9.752L35.124 13.988H37.956V9.752ZM43.1695 15.356L41.7175 18.668H40.8295L41.6815 15.356H43.1695ZM45.8888 14.624C45.9688 15.024 46.1408 15.328 46.4048 15.536C46.6688 15.744 47.0248 15.848 47.4728 15.848C48.0408 15.848 48.4568 15.624 48.7208 15.176C48.9848 14.728 49.1168 13.964 49.1168 12.884C48.9248 13.156 48.6528 13.368 48.3008 13.52C47.9568 13.664 47.5808 13.736 47.1728 13.736C46.6528 13.736 46.1808 13.632 45.7568 13.424C45.3328 13.208 44.9968 12.892 44.7488 12.476C44.5088 12.052 44.3888 11.54 44.3888 10.94C44.3888 10.06 44.6448 9.36 45.1568 8.84C45.6768 8.312 46.3888 8.048 47.2928 8.048C48.3808 8.048 49.1528 8.412 49.6088 9.14C50.0728 9.86 50.3048 10.968 50.3048 12.464C50.3048 13.496 50.2168 14.34 50.0408 14.996C49.8728 15.652 49.5768 16.148 49.1528 16.484C48.7288 16.82 48.1408 16.988 47.3888 16.988C46.5328 16.988 45.8728 16.764 45.4088 16.316C44.9448 15.868 44.6848 15.304 44.6288 14.624H45.8888ZM47.4128 12.584C47.8928 12.584 48.2688 12.436 48.5408 12.14C48.8208 11.836 48.9608 11.436 48.9608 10.94C48.9608 10.388 48.8128 9.96 48.5168 9.656C48.2288 9.344 47.8328 9.188 47.3288 9.188C46.8248 9.188 46.4248 9.348 46.1288 9.668C45.8408 9.98 45.6968 10.392 45.6968 10.904C45.6968 11.392 45.8368 11.796 46.1168 12.116C46.4048 12.428 46.8368 12.584 47.4128 12.584Z"
+                  fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+            
+            <div class="py-6 px-4">
+              <h1 class="font-bold text-2xl">Digital Marketing 101</h1>
+              <p class="font-normal text-sm mb-6 text-accent">
+              Materi mengenai strategi dan konsep marketing  pemula
+              </p>
+              <div class="flex gap-4 items-center text-accent">
+                <div class="flex gap-2">
+                  <span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 6V10L13 13L10 6ZM19 10C19 11.1819 18.7672 12.3522 18.3149 13.4442C17.8626 14.5361 17.1997 15.5282 16.364 16.364C15.5282 17.1997 14.5361 17.8626 13.4442 18.3149C12.3522 18.7672 11.1819 19 10 19C8.8181 19 7.64778 18.7672 6.55585 18.3149C5.46392 17.8626 4.47177 17.1997 3.63604 16.364C2.80031 15.5282 2.13738 14.5361 1.68508 13.4442C1.23279 12.3522 1 11.1819 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <p class="font-normal text-sm">6,2 Jam</p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.8">
+                        <path
+                          d="M14.752 11.168L11.555 9.036C11.4043 8.93542 11.229 8.8777 11.048 8.869C10.867 8.8603 10.687 8.90094 10.5274 8.98659C10.3677 9.07224 10.2342 9.19967 10.1414 9.35527C10.0485 9.51087 9.99961 9.68878 10 9.86999V14.133C9.99998 14.314 10.0491 14.4917 10.1421 14.647C10.2352 14.8023 10.3686 14.9295 10.5282 15.0149C10.6879 15.1003 10.8677 15.1408 11.0485 15.132C11.2293 15.1232 11.4044 15.0655 11.555 14.965L14.752 12.833C14.889 12.7417 15.0013 12.618 15.0789 12.4728C15.1566 12.3277 15.1972 12.1656 15.1972 12.001C15.1972 11.8364 15.1566 11.6743 15.0789 11.5292C15.0013 11.384 14.889 11.2603 14.752 11.169V11.168Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                  <p class="font-normal text-sm">32 Video</p>
+                </div>
+                <div class="flex gap-2">
+                  <span>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9 2.62833C9.44787 2.12059 10.0397 1.76126 10.6968 1.59816C11.354 1.43507 12.0451 1.47594 12.6785 1.71533C13.3118 1.95473 13.8572 2.38131 14.2421 2.9383C14.627 3.49529 14.8332 4.15629 14.8332 4.83333C14.8332 5.51038 14.627 6.17138 14.2421 6.72837C13.8572 7.28536 13.3118 7.71193 12.6785 7.95133C12.0451 8.19073 11.354 8.2316 10.6968 8.06851C10.0397 7.90541 9.44787 7.54608 9 7.03833V2.62833ZM11.5 16.5H1.5V15.6667C1.5 14.3406 2.02678 13.0688 2.96447 12.1311C3.90215 11.1935 5.17392 10.6667 6.5 10.6667C7.82608 10.6667 9.09785 11.1935 10.0355 12.1311C10.9732 13.0688 11.5 14.3406 11.5 15.6667V16.5ZM11.5 16.5H16.5V15.6667C16.5001 14.7889 16.2692 13.9266 15.8304 13.1664C15.3916 12.4062 14.7604 11.7749 14.0003 11.336C13.2402 10.8971 12.3779 10.666 11.5002 10.666C10.6224 10.6659 9.76015 10.897 9 11.3358L11.5 16.5ZM9.83333 4.83333C9.83333 5.71739 9.48214 6.56524 8.85702 7.19036C8.2319 7.81548 7.38405 8.16667 6.5 8.16667C5.61594 8.16667 4.7681 7.81548 4.14298 7.19036C3.51786 6.56524 3.16667 5.71739 3.16667 4.83333C3.16667 3.94928 3.51786 3.10143 4.14298 2.47631C4.7681 1.85119 5.61594 1.5 6.5 1.5C7.38405 1.5 8.2319 1.85119 8.85702 2.47631C9.48214 3.10143 9.83333 3.94928 9.83333 4.83333V4.83333Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <p class="font-normal text-sm">930 Siswa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- kursus 3 -->
+         <div>
+            <div class="relative">
+              <img src="asset/img/pexels-olya-kobruseva-5561923 1.png" alt=""/>
+              <div class="absolute top-52 right-3 z-10 ">
+              <svg
+                width="63"
+                height="25"
+                viewBox="0 0 63 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 12.5C0 5.59644 5.59644 0 12.5 0H50.5C57.4036 0 63 5.59644 63 12.5V12.5C63 19.4036 57.4036 25 50.5 25H12.5C5.59644 25 0 19.4036 0 12.5V12.5Z"
+                  fill="#1C1E53"
+                />
+                <path
+                  d="M19.1441 6.63431C19.4141 5.80541 20.5868 5.80541 20.8559 6.63431L21.8189 9.59711C21.8778 9.77755 21.9921 9.93477 22.1457 10.0463C22.2992 10.1578 22.4841 10.218 22.6739 10.2181H25.7897C26.6618 10.2181 27.0236 11.3341 26.3189 11.8471L23.7989 13.6777C23.6451 13.7893 23.5305 13.9468 23.4716 14.1276C23.4128 14.3083 23.4127 14.5031 23.4713 14.6839L24.4343 17.6467C24.7043 18.4756 23.7548 19.1659 23.0483 18.6529L20.5283 16.8223C20.3746 16.7107 20.1895 16.6506 19.9996 16.6506C19.8096 16.6506 19.6245 16.7107 19.4708 16.8223L16.9508 18.6529C16.2452 19.1659 15.2966 18.4756 15.5657 17.6467L16.5287 14.6839C16.5874 14.5031 16.5873 14.3083 16.5284 14.1276C16.4696 13.9468 16.355 13.7893 16.2011 13.6777L13.682 11.848C12.9773 11.335 13.34 10.219 14.2112 10.219H17.3261C17.5161 10.2191 17.7012 10.159 17.8549 10.0475C18.0086 9.93592 18.1231 9.77859 18.182 9.59801L19.145 6.63521L19.1441 6.63431Z"
+                  fill="#FCD980"
+                  />
+                  <path
+                  d="M33.552 15.176V14.144L37.584 8.36H39.24V13.988H40.356V15.176H39.24V17H37.896V15.176H33.552ZM37.956 9.752L35.124 13.988H37.956V9.752ZM43.1695 15.356L41.7175 18.668H40.8295L41.6815 15.356H43.1695ZM45.8888 14.624C45.9688 15.024 46.1408 15.328 46.4048 15.536C46.6688 15.744 47.0248 15.848 47.4728 15.848C48.0408 15.848 48.4568 15.624 48.7208 15.176C48.9848 14.728 49.1168 13.964 49.1168 12.884C48.9248 13.156 48.6528 13.368 48.3008 13.52C47.9568 13.664 47.5808 13.736 47.1728 13.736C46.6528 13.736 46.1808 13.632 45.7568 13.424C45.3328 13.208 44.9968 12.892 44.7488 12.476C44.5088 12.052 44.3888 11.54 44.3888 10.94C44.3888 10.06 44.6448 9.36 45.1568 8.84C45.6768 8.312 46.3888 8.048 47.2928 8.048C48.3808 8.048 49.1528 8.412 49.6088 9.14C50.0728 9.86 50.3048 10.968 50.3048 12.464C50.3048 13.496 50.2168 14.34 50.0408 14.996C49.8728 15.652 49.5768 16.148 49.1528 16.484C48.7288 16.82 48.1408 16.988 47.3888 16.988C46.5328 16.988 45.8728 16.764 45.4088 16.316C44.9448 15.868 44.6848 15.304 44.6288 14.624H45.8888ZM47.4128 12.584C47.8928 12.584 48.2688 12.436 48.5408 12.14C48.8208 11.836 48.9608 11.436 48.9608 10.94C48.9608 10.388 48.8128 9.96 48.5168 9.656C48.2288 9.344 47.8328 9.188 47.3288 9.188C46.8248 9.188 46.4248 9.348 46.1288 9.668C45.8408 9.98 45.6968 10.392 45.6968 10.904C45.6968 11.392 45.8368 11.796 46.1168 12.116C46.4048 12.428 46.8368 12.584 47.4128 12.584Z"
+                  fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+            
+            <div class="py-6 px-4">
+              <h1 class="font-bold text-2xl">Data Science Dasar</h1>
+              <p class="font-normal text-sm mb-6 text-accent">
+               Materi pembelajaran mengenai dasar-dasar data science
+              </p>
+              <div class="flex gap-4 items-center text-accent">
+                <div class="flex gap-2">
+                  <span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 6V10L13 13L10 6ZM19 10C19 11.1819 18.7672 12.3522 18.3149 13.4442C17.8626 14.5361 17.1997 15.5282 16.364 16.364C15.5282 17.1997 14.5361 17.8626 13.4442 18.3149C12.3522 18.7672 11.1819 19 10 19C8.8181 19 7.64778 18.7672 6.55585 18.3149C5.46392 17.8626 4.47177 17.1997 3.63604 16.364C2.80031 15.5282 2.13738 14.5361 1.68508 13.4442C1.23279 12.3522 1 11.1819 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <p class="font-normal text-sm">8 Jam</p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.8">
+                        <path
+                          d="M14.752 11.168L11.555 9.036C11.4043 8.93542 11.229 8.8777 11.048 8.869C10.867 8.8603 10.687 8.90094 10.5274 8.98659C10.3677 9.07224 10.2342 9.19967 10.1414 9.35527C10.0485 9.51087 9.99961 9.68878 10 9.86999V14.133C9.99998 14.314 10.0491 14.4917 10.1421 14.647C10.2352 14.8023 10.3686 14.9295 10.5282 15.0149C10.6879 15.1003 10.8677 15.1408 11.0485 15.132C11.2293 15.1232 11.4044 15.0655 11.555 14.965L14.752 12.833C14.889 12.7417 15.0013 12.618 15.0789 12.4728C15.1566 12.3277 15.1972 12.1656 15.1972 12.001C15.1972 11.8364 15.1566 11.6743 15.0789 11.5292C15.0013 11.384 14.889 11.2603 14.752 11.169V11.168Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                  <p class="font-normal text-sm">46 Video</p>
+                </div>
+                <div class="flex gap-2">
+                  <span>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9 2.62833C9.44787 2.12059 10.0397 1.76126 10.6968 1.59816C11.354 1.43507 12.0451 1.47594 12.6785 1.71533C13.3118 1.95473 13.8572 2.38131 14.2421 2.9383C14.627 3.49529 14.8332 4.15629 14.8332 4.83333C14.8332 5.51038 14.627 6.17138 14.2421 6.72837C13.8572 7.28536 13.3118 7.71193 12.6785 7.95133C12.0451 8.19073 11.354 8.2316 10.6968 8.06851C10.0397 7.90541 9.44787 7.54608 9 7.03833V2.62833ZM11.5 16.5H1.5V15.6667C1.5 14.3406 2.02678 13.0688 2.96447 12.1311C3.90215 11.1935 5.17392 10.6667 6.5 10.6667C7.82608 10.6667 9.09785 11.1935 10.0355 12.1311C10.9732 13.0688 11.5 14.3406 11.5 15.6667V16.5ZM11.5 16.5H16.5V15.6667C16.5001 14.7889 16.2692 13.9266 15.8304 13.1664C15.3916 12.4062 14.7604 11.7749 14.0003 11.336C13.2402 10.8971 12.3779 10.666 11.5002 10.666C10.6224 10.6659 9.76015 10.897 9 11.3358L11.5 16.5ZM9.83333 4.83333C9.83333 5.71739 9.48214 6.56524 8.85702 7.19036C8.2319 7.81548 7.38405 8.16667 6.5 8.16667C5.61594 8.16667 4.7681 7.81548 4.14298 7.19036C3.51786 6.56524 3.16667 5.71739 3.16667 4.83333C3.16667 3.94928 3.51786 3.10143 4.14298 2.47631C4.7681 1.85119 5.61594 1.5 6.5 1.5C7.38405 1.5 8.2319 1.85119 8.85702 2.47631C9.48214 3.10143 9.83333 3.94928 9.83333 4.83333V4.83333Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <p class="font-normal text-sm">1.043 Siswa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!--ulasan -->
+      <section>
+        <div class=" bg-layar mt-40 ">
+          <div class="mx-16 flex gap-[104px] pt-[85px] pb-[80px]">
+          <div class="w-3/4">
+            <h1 class="font-semibold text-[28px]">Kata Mereka Tentang Kursus EDUFREE</h1>
+            <p class="font-normal text-[16px] text-accent w-4/5">EDUFREE telah dipercaya lebih dari 10.000 siswa  </p>
+          </div>
+
+          <div>
+            <div class="mb-7">
+              <h2 class="font-medium text-[26px] text-justify">"Materi yang disampaikan mudah dimengerti, kualitas instruktur sangat baik serta  responnya yang cepat. So, kursus disini sangat sangat saya rekomendasikan!!"</h2>
+            </div>
+            <div class="flex items-center">
+                <div class="ml-2">
+                  <img class="rounded-full" src="./asset/img/woman-in-collared-shirt-774909.jpg" alt="">
+                </div>
+                <div class="ml-[14px]">
+                  <h1 class="font-medium text-lg">Jenny Wilson</h1>
+                  <p class="font-medium text-xs">Vice President</p>
+                </div>
+               <div class="ml-[440px]">
+                <svg width="132" height="16" viewBox="0 0 132 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="124" cy="8" r="8" fill="#2405F2" fill-opacity="0.4"/>
+                <circle cx="95" cy="8" r="8" fill="#2405F2" fill-opacity="0.4"/>
+                <circle cx="66" cy="8" r="8" fill="#2405F2" fill-opacity="0.4"/>
+                <circle cx="37" cy="8" r="8" fill="#2405F2"/>
+                <circle cx="8" cy="8" r="8" fill="#2405F2" fill-opacity="0.4"/>
+                </svg>
+               </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- pertanyaan -->
+       <section>
+        <div class="flex mt-[152px] mx-16 gap-[109px]">
+          <div>
+            <h1 class="text-[28px] font-semibold w-[328px]">Frequently Asked Questions</h1>
+            <p class="text-[16px] text-accent w-[327px]">Masih bingung atau ragu? Hubungi kami di nomor  +6288 999 222 333</p>
+          </div>
+          <div class="w-[1286px]">
+            <div class="border-b-2">
+              <div class="flex items-center mb-[18px]">
+                <p class="text-2xl font-medium text-number mr-[59px]">01</p>
+                <h1 class="text-2xl font-medium w-full ">Apakah kursus ini benar-benar gratis?</h1>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 1.5L12.5 12.5M1.5 12.5L12.5 1.5L1.5 12.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                  <p class="text-lg font-medium text-accent  w-[624px] ml-[83px] mb-12">Kursus yang disediakan bisa diakses gratis untuk menunjang kebutuhan dalam bidang kependidikan.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center py-8 border-b-2">
+              <p class="text-2xl font-medium text-number mr-[54px]">02</p>
+              <h1 class="text-2xl font-medium w-full">Untuk siapa kursus ini?</h1>
+              <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.80746 9H17.3638M9.58564 16.7782V1.22183V16.7782Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <div class="flex items-center py-8 border-b-2">
+              <p class="text-2xl font-medium text-number mr-[54px]">03</p>
+              <h1 class="text-2xl font-medium w-full">Apakah kursus ini bersertifikat?</h1>
+              <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.80746 9H17.3638M9.58564 16.7782V1.22183V16.7782Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <div class="flex items-center py-8 border-b-2">
+              <p class="text-2xl font-medium text-number mr-[54px]">04</p>
+              <h1 class="text-2xl font-medium w-full">Sampai kapan kursus ini berakhir?</h1>
+              <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.80746 9H17.3638M9.58564 16.7782V1.22183V16.7782Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <div class="flex items-center py-8 border-b-2">
+              <p class="text-2xl font-medium text-number mr-[54px]">05</p>
+              <h1 class="text-2xl font-medium w-full">Apakah ada penyaluran kerja setelah lulus?</h1>
+              <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.80746 9H17.3638M9.58564 16.7782V1.22183V16.7782Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+       </section>
+
+       <!-- daftar -->
+       <section>
+          <div class="flex mt-[248px] mx-16 bg-gray-500 h-[640px]">
+            <div class="relative w-full bg-primary">
+              <img class="h-[640px] w-full opacity-60" src="./asset/img/bg-card.png" alt="">
+              <div class="absolute top-[75px] left-[75px] w-[444px]">
+                <h2 class="font-semibold text-[42px] mb-[24px] text-secondary">Selangkah Lebih Dekat Dengan Impianmu</h2>
+                <p class="text-secondary">Sebuah layanan E-Learning gratis yang siap membantumu menjadi seorang ahli </p>
+              </div>
+            </div>
+            <div class="bg-primary w-full">
+              <div class="w-[432px] my-[60px] mx-[101px]">
+                <div>
+                  <h2 class="font-semibold text-[28px] text-secondary mb-[16px]">Daftarkan Dirimu!</h2>
+                  <p class="font-normal text-secondary mb-[48px]">Persiapkan diri untuk masa depan yang penuh dengan bintang</p>
+                </div>
+
+                <form action="">
+                  <div>
+                    <input class="border-2 border-gray-500 w-full mb-[16px] p-[18px] rounded bg-transparent" type="text" placeholder="Your Name">
+                  </div>
+                  <div>
+                    <input class="border-2 border-gray-500 w-full mb-[16px] p-[18px] rounded bg-transparent" type="email" placeholder="Email">
+                  </div>
+                  <div>
+                    <input class="border-2 border-gray-500 w-full mb-[40px] p-[18px] rounded bg-transparent" type="password" placeholder="Password">
+                  </div>
+                  <div>
+                    <button class="bg-button rounded w-full py-[19px] mb-[27px] hover:bg-yellow-600 duration-200" type="submit">DAFTAR</button>
+                  </div>
+                </form>
+                <div>
+                  <p class="font-normal text[18px] text-secondary text-center ">Sudah punya akun?<a class="underline ml-1" href="">Login</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+       </section>
+
+       <!-- Blog, Berita dan Event -->
+       <section>
+        <div class="mx-16 mt-[161px]">
+          <div class="flex justify-between">
+            <div>
+              <h2 class="font-semibold text-[38px]">Blog, Berita dan Event</h2>
+            </div>
+            <div class="flex items-center gap-[8px]">
+              <p>Lihat Semua</p>
+              <span>
+                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.5 5.99992H1.5M10.6667 1.33325L16.5 5.99992L10.6667 1.33325ZM16.5 5.99992L10.6667 10.6666L16.5 5.99992Z" stroke="#282938" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="mt-[64px] grid grid-cols-3 gap-[43px]">
+            <div class="w-[390px]">
+              <img src="./asset/img/arabic-businessman-standing-on-street-and-using-laptop-9623794.png" alt="">
+              <p class="tetx-[16px] text-accent mt-[40px]">19 Jan 2022</p>
+              <h2 class="font-medium text-[20px] mt-[16px]">Cara Mudah Untuk Memulai Belajar Programming - EDUFREE</h2>
+              <p class="font-normal text-[16px] text-accent mt-[16px]">Menjadi seorang programmer saat ini sudah sangat mudah untuk dipelajari oleh siapapun ...</p>
+              <span class="flex items-center gap-[11px] mt-[36px]"><p class="font-medium text-[16px]">Selengkapnya</p>
+                <svg width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76256 24.5303 5.46967L19.7574 0.696699C19.4645 0.403806 18.9896 0.403806 18.6967 0.696699C18.4038 0.989592 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM0 6.75H24V5.25H0V6.75Z" fill="#282938"/>
+                </svg>
+              </span>
+            </div>
+
+            <div class="w-[390px]">
+              <img src="./asset/img/arabic-businessman-standing-on-street-and-using-laptop-9623794 copy.png" alt="">
+              <p class="tetx-[16px] text-accent mt-[40px]">19 Jan 2022</p>
+              <h2 class="font-medium text-[20px] mt-[16px]">Tips Membuat Website Landing Page Bussines - EDUFREE</h2>
+              <p class="font-normal text-[16px] text-accent mt-[16px]">Pentingnya website dalam menumbuhkan rasa kepercayaan terhadap bisnis, membuat ...</p>
+              <span class="flex items-center gap-[11px] mt-[36px]"><p class="font-medium text-[16px]">Selengkapnya</p>
+                <svg width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76256 24.5303 5.46967L19.7574 0.696699C19.4645 0.403806 18.9896 0.403806 18.6967 0.696699C18.4038 0.989592 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM0 6.75H24V5.25H0V6.75Z" fill="#282938"/>
+                </svg>
+              </span>
+            </div>
+
+            <div class="w-[390px]">
+              <img src="./asset/img/arabic-businessman-standing-on-street-and-using-laptop-9623794 copy 2.png" alt="">
+              <p class="tetx-[16px] text-accent mt-[40px]">19 Jan 2022</p>
+              <h2 class="font-medium text-[20px] mt-[16px]">Cara Installasi Wordpress Untuk Pemula -EDUFREE</h2>
+              <p class="font-normal text-[16px] text-accent mt-[16px]">Membuat website saat ini sudah bisa tanpa codingan, kini kamu bisa membuatnya ...</p>
+              <span class="flex items-center gap-[11px] mt-[36px]"><p class="font-medium text-[16px]">Selengkapnya</p>
+                <svg width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76256 24.5303 5.46967L19.7574 0.696699C19.4645 0.403806 18.9896 0.403806 18.6967 0.696699C18.4038 0.989592 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM0 6.75H24V5.25H0V6.75Z" fill="#282938"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+       </div>
+       </section>
+
+       <!-- media social -->
+       <section>
+        <div class="bg-primary mt-[198px] relative">
+          <div class="flex p-[70px] justify-between">
+            <div>
+              <h2 class="text-secondary font-bold text-[24px] mb-[11px]">[EDUFREE]</h2>
+              <p class="text-secondary font-normal text-[16px] w-[327px]">Bangun dan wujudkan cita bersama edufree</p>
+            </div>
+            <div class="flex gap-[99px] mb-[64px]">
+              <div>
+                <h3 class="text-secondary font-medium text-[20px] mb-[21px]">Sosial Media</h3>
+                <p class="text-secondary text-[18px] font-light">Instagram</p>
+                <p class="text-secondary text-[18px] font-light">Twitter</p>
+                <p class="text-secondary text-[18px] font-light">LinkedIn</p>
+              </div>
+              <div>
+                <h3 class="text-secondary font-medium text-[20px] mb-[21px]">Program</h3>
+                <p class="text-secondary text-[18px] font-light">Merdeka Belajar</p>
+                <p class="text-secondary text-[18px] font-light">Finterpreneur</p>
+              </div>
+              <div>
+                <h3 class="text-secondary font-medium text-[20px] mb-[21px]">DUKUNGAN</h3>
+                <p class="text-secondary text-[18px] font-light">Tentang Kami</p>
+                <p class="text-secondary text-[18px] font-light">Ketentuan</p>
+                <p class="text-secondary text-[18px] font-light">Kebijakan Privasi</p>
+              </div>
+            </div>
+          </div>
+         <div class="flex gap-[29px] bg-button py-[15px] px-[30px] w-[420px] rounded-t-lg absolute bottom-0 left-[69px]">
+          <div>
+            <h2 class="font-medium text-[18px] mb-[6px]">Email</h2>
+            <p class="font-normal text-[16px] text-accent">contact@website.com</p>
+          </div>
+          <div>
+            <h2 class="font-medium text-[18px] mb-[6px]">Telephone</h2>
+            <p class="font-normal text-[16px]  text-accent">+6288 999 222 333</p>
+          </div>
+         </div>
+        </div>
+       </section>
+    </main>
+    <footer>
+      <div class="flex mx-16 justify-between py-[27px]">
+        <div>
+          <h2 class="font-medium text-[18px]">&copy; Copyright EDUFREE 2021 - 2022</h2>
+        </div>
+        <div class="flex flex-row gap-[35px] font-medium text-[16px]">
+          <a href="">HOME</a>
+          <a href="">TENTANG KAMI</a>
+          <a href="">KURSUS</a>
+          <a href="">FAQ</a>
+          <a href="">BLOG</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
