@@ -54,18 +54,21 @@
     .font-poppins {
       font-family: "poppins", sans-serif;
     }
+    
      .hover-text-yellow-200:hover svg path {
       stroke: #fde68a; 
     }
+    
   </style>
-  <body class="font-poppins">
-    <nav class="flex justify-between items-center bg-primary h-20 px-16 ">
-      <div>
-        <h2 class="text-secondary text-2xl font-bold">[EDUFREE]</h2>
+  <body class="font-poppins w-[430px] md:w-[1000px] lg:w-[1349px] mx-auto">
+    <nav class="flex justify-between items-center bg-primary h-20 px-6 md:px-10 lg:px-16">
+      <div class="flex items-center gap-[20px]">
+        <svg class="w-[30px] text-white md:hidden lg:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+        <h2 class="text-secondary font-bold text-[20px] md:text-[22px] lg:text-[24px]">[EDUFREE]</h2>
       </div>
-      <div class="flex items-center gap-16">
-        <div>
-          <ul class="flex gap-10 text-secondary text-[16px]">
+      <div class="flex items-center md:gap-10 lg:gap-16">
+        <div class="hidden md:block lg:block">
+          <ul class="flex text-secondary md:text-[12px] md:gap-5 lg:text-[16px] lg:gap-10">
             <li><a class="font-medium hover:text-yellow-200 duration-200" href="">HOME</a></li>
             <li><a class="font-normal hover:text-yellow-200 duration-200" href="">TENTANG KAMI</a></li>
             <li><a class="font-normal hover:text-yellow-200 duration-200" href="">KURSUS</a></li>
@@ -97,7 +100,7 @@
         <div>
           <button
             type="submit"
-            class="border-solid border-2 border-white hover:border-yellow-200 hover:text-yellow-200 duration-200 text-secondary py-3 px-10 rounded h-12 w-32"
+            class="border-solid border-2 border-white hover:border-yellow-200 hover:text-yellow-200 duration-200 text-secondary rounded py-1 px-6 md:py-2 md:px-8 lg:py-3 lg:px-10"
           >
             Login
           </button>
@@ -106,26 +109,33 @@
     </nav>
 
     <main>
-      <!-- HOME -->
+      <!-- home -->
       <section>
         <div class="bg-primary h-auto py-16">
-          <div class="mx-auto flex justify-between items-center px-16 gap-28">
-            <div class="w-1/2">
-              <h1 class="text-secondary text-4xl font-bold mb-6">
+          <div class="mx-auto flex flex-col justify-between items-center gap-[30px] px-6 md:gap-28 md:px-10 md:flex-row lg:gap-28 lg:px-16 lg:flex-row">
+            <div class="block md:hidden lg:hidden">
+              <img
+                src="./asset/img/Group 2621.png"
+                alt="Illustration"
+                class="w-4/3"
+              />
+            </div>
+            <div class="md:w-1/2 lg:w-1/2">
+              <h1 class="text-secondary font-bold mb-6 text-[28px] md:text-[32px] lg:text-[36px]">
                 Bangun dan Wujudkan Cita Bersama EDUFREE
               </h1>
-              <p class="text-secondary text-[16px] font-normal mb-8">
+              <p class="text-secondary font-normal mb-8 text-[14px] md:text-[14px] lg:text-[16px]">
                 EDUFREE adalah sebuah layanan kursus dan pelatihan gratis secara
                 online yang bertujuan untuk membantu kamu meraih cita di bidang
                 teknologi.
               </p>
               <div class="flex gap-9">
                 <button
-                  class="bg-button hover:bg-yellow-600 duration-200 text-primary py-3 px-6 rounded font-medium"
+                  class="bg-button hover:bg-yellow-600 duration-200 text-primary rounded font-medium py-2 px-5 md:py-2 md:px-5 lg:py-3 lg:px-6"
                 >
                   Lihat Kursus
                 </button>
-                <a class="text-secondary flex items-center gap-2 hover:text-yellow-200 duration-200 hover-text-yellow-200" href="#">
+                <a href="#" class="text-secondary flex items-center gap-2 hover:text-yellow-200 duration-200 hover-text-yellow-200">
                   Lihat Alur Belajar
                   <svg
                     width="20"
@@ -145,7 +155,7 @@
                 </a>
               </div>
             </div>
-            <div class="w-1/2">
+            <div class="w-1/2 hidden md:block lg:block">
               <img
                 src="./asset/img/Group 2621.png"
                 alt="Illustration"
@@ -155,26 +165,26 @@
           </div>
         </div>
         <div class="bg-layar py-20">
-          <div class="mx-16 flex">
-          <div class="flex gap-6">
+          <div class="mx-6 md:mx-10 md:flex lg:mx-16 lg:flex">
+          <div class="flex gap-5">
             <div>
-              <h3 class="font-bold text-3xl">21.000+</h3>
-              <p class="font-normal text-sm text-accent 
+              <h3 class="font-bold md:text-[22px] lg:text-[30px]">21.000+</h3>
+              <p class="font-normal text-accent md:text-[10px] lg:text-[14px] 
               ">Siswa terdaftar</p>
             </div>
             <div>
-              <h3 class="font-bold text-3xl">100+</h3>
-              <p class="font-normal text-sm text-accent 
+              <h3 class="font-bold md:text-[22px] lg:text-[30px]">100+</h3>
+              <p class="font-normal text-accent md:text-[10px] lg:text-[14px] 
               ">Instruktur Ahli</p>
             </div>
             <div>
-              <h3 class="font-bold text-3xl">150+</h3>
-              <p class="font-normal text-sm text-accent 
+              <h3 class="font-bold md:text-[22px] lg:text-[30px]">150+</h3>
+              <p class="font-normal text-accent md:text-[10px] lg:text-[14px] 
               ">Kursus Gratis</p>
             </div>
           </div>
-          <div class="flex gap-8 ml-12 items-center mt-6">
-            <div class="flex gap-3 items-center">
+          <div class="items-center mt-5 grid grid-cols-3 gap-2 md:ml-8 md:gap-4 md:flex md:mt-auto lg:ml-12 lg:gap-8 lg:flex lg:mt-auto">
+            <div class="flex items-center gap-2 md:gap-2 lg:gap-3">
               <span
                 ><svg
                   width="28"
@@ -193,9 +203,9 @@
                   />
                 </svg>
               </span>
-              <p class="font-bold text-2xl">LOREM</p>
+              <p class="font-bold md:text-[18px] lg:text-[24px]">LOREM</p>
             </div>
-            <div class="flex gap-3 items-center">
+            <div class="flex items-center gap-2 md:gap-2 lg:gap-3">
               <span
                 ><svg
                   width="24"
@@ -212,9 +222,9 @@
                   />
                 </svg>
               </span>
-              <p class="font-bold text-2xl">DITLANCE</p>
+              <p class="font-bold md:text-[18px] lg:text-[24px]">DITLANCE</p>
             </div>
-            <div class="flex gap-2 items-center">
+            <div class="flex items-center gap-2 md:gap-2 lg:gap-3">
               <span>
                 <svg
                   width="28"
@@ -268,9 +278,9 @@
                   </defs>
                 </svg>
               </span>
-              <p class="font-bold text-2xl">OWTHEST</p>
+              <p class="font-bold md:text-[18px] lg:text-[24px]">OWTHEST</p>
             </div>
-            <div class="flex gap-3 items-center">
+            <div class="flex items-center gap-2 md:gap-2 lg:gap-3">
               <span>
                 <svg
                   width="24"
@@ -287,9 +297,9 @@
                   />
                 </svg>
               </span>
-              <p class="font-bold text-2xl">NEOVASI</p>
+              <p class="font-bold md:text-[18px] lg:text-[24px]">NEOVASI</p>
             </div>
-            <div class="flex gap-3 items-center">
+            <div class="flex items-center gap-2 md:gap-2 lg:gap-3">
               <span>
                 <svg
                   width="20"
@@ -306,20 +316,20 @@
                   />
                 </svg>
               </span>
-              <p class="font-bold text-2xl">ONAGO</p>
+              <p class="font-bold md:text-[18px] lg:text-[24px]">ONAGO</p>
                </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- BERGABUNG -->
+      <!-- berabung -->
       <section>
-        <div class="mx-16">
-          <h1 class="font-bold text-3xl text-center mt-32 w-2/5 mx-auto mb-14">
+        <div class="mx-6 md:mx-10 lg:mx-16">
+          <h1 class="font-bold text-center mt-32 mx-auto mb-14 text-[24px] md:text-[28px] md:lg:w-2/5 lg:text-[30px] lg:w-2/5">
             Keuntungan Bergabung Dengan E-Learning EDUFREE
           </h1>
-          <div class="grid grid-cols-3 gap-10">
+          <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
             <div class="p-6 bg-card">
               <div class="p-8">
                 <svg
@@ -357,8 +367,8 @@
                     fill="white"
                   />
                 </svg>
-                <h2 class="text-2xl font-medium mb-3">Kursus Gratis</h2>
-                <p class="text-sm text-accent">
+                <h2 class="font-medium mb-3 md:text-[22px] lg:text-[24px]">Kursus Gratis</h2>
+                <p class="text-accent md:text-[14px] lg:text-[16px]">
                   Kami menyediakan beberapa kursus gratis untuk menunjang
                   ketersediaan pendidikan untuk masyarakat kurang mampu
                 </p>
@@ -401,8 +411,8 @@
                     fill="white"
                   />
                 </svg>
-                <h2 class="text-2xl font-medium mb-3">Akses Selamanya</h2>
-                <p class="text-sm text-accent">
+                <h2 class="font-medium mb-3 md:text-[22px] lg:text-[24px]">Akses Selamanya</h2>
+                <p class="text-accent md:text-[14px] lg:text-[16px]">
                   Semua kursus yang telah kamu daftar bisa diakses selamanya
                   sehingga belajar kamu lebih nyaman dan tidak terburu-buru
                 </p>
@@ -445,8 +455,8 @@
                     fill="white"
                   />
                 </svg>
-                <h2 class="text-2xl font-medium mb-3">Grup Konsultasi</h2>
-                <p class="text-sm text-accent">
+                <h2 class="font-medium mb-3 md:text-[22px] lg:text-[24px]">Grup Konsultasi</h2>
+                <p class="text-accent md:text-[14px] lg:text-[16px]">
                   Terdapat grup konsultasi yang berguna jika kamu ingin
                   menanyakan suatu pertanyaan dan kamu juga bisa mebuka diskusi
                   baru
@@ -490,10 +500,10 @@
                     fill="white"
                   />
                 </svg>
-                <h2 class="text-2xl font-medium mb-3">
+                <h2 class="font-medium mb-3 md:text-[22px] lg:text-[24px]">
                   Sertifikat dan Portofolio
                 </h2>
-                <p class="text-sm text-accent">
+                <p class="text-accent md:text-[14px] lg:text-[16px]">
                   Setelah menyelesaikan kursus kamu akan mendapatkan sertifikat
                   serta portofolio dari project kursus yang telah diselesaikan
                 </p>
@@ -536,8 +546,8 @@
                     fill="white"
                   />
                 </svg>
-                <h2 class="text-2xl font-medium mb-3">Belajar Lebih Terarah</h2>
-                <p class="text-sm text-accent">
+                <h2 class="font-medium mb-3 md:text-[22px] lg:text-[24px]">Belajar Lebih Terarah</h2>
+                <p class="text-accent md:text-[14px] lg:text-[16px]">
                   Kursus menyediakan kursus dari level dasar hingga expert
                   sehingga semua bisa belajar dengan layanan yang kami sediakan
                 </p>
@@ -580,10 +590,10 @@
                     fill="white"
                   />
                 </svg>
-                <h2 class="text-2xl font-medium mb-3">
+                <h2 class="font-medium mb-3 md:text-[22px] lg:text-[24px]">
                   Instruktur Berpengalaman
                 </h2>
-                <p class="text-sm text-accent">
+                <p class="text-accent md:text-[14px] lg:text-[16px]">
                   Kami mempunyai instruktur berpengalaman yang diambil dari
                   dunia industri yang tak diragukan lagi pengalamannya
                 </p>
@@ -593,21 +603,28 @@
         </div>
       </section>
 
-      <!-- TENTANG KAMI -->
+      <!-- tetang kami -->
       <section>
-        <div class="mt-36 flex justify-between mx-16 gap-16 ">
-          <div class=" flex flex-col justify-center w-2/4 ">
-            <p class="font-normal text-lg mb-4 text-accent">Tentang Kami</p>
-            <h1 class="font-bold text-[38px] mb-4">
+        <div class="mt-36 justify-between gap-16 mx-6 md:flex md:mx-10 lg:flex lg:mx-16">
+          <div class="block md:hidden lg:hidden">
+            <img class="w-full md:w-[475px] md:h-[298px] lg:w-[575px] lg:h-[398px]"
+              class="max-w-xl w-[575px]"
+              src="./asset/img/unsplash_vbxyFxlgpjM.png"
+              alt=""
+            />
+          </div>
+          <div class=" flex flex-col justify-center md:w-2/4 lg:w-2/4 ">
+            <p class="font-normal mb-4 mt-5 text-accent text-[16px] md:mt-0 md:text-lg lg:mt-0 lg:text-lg">Tentang Kami</p>
+            <h1 class="font-bold mb-4 text-[24px] md:text-[28px] lg:text-[30px]">
               EDUFREE Layanan E-Learning Gratis Untuk Membantu Kamu Bertumbuh
             </h1>
-            <p class="font-normal text-sm text-accent w-[500px] ">
+            <p class="font-normal text-accent text-[14px] md:lg:w-[500px] md:text-[14px] lg:w-[500px] lg:text-[16px]">
               Edufree diharapkann bisa menjadi layanan yang bermanfaat bagi
               kedepanya dalam bidang pendidikan
             </p>
           </div>
-          <div>
-            <img class="w-[575px] h-[398px]"
+          <div class="hidden md:block lg:block">
+            <img class="md:w-[475px] md:h-[298px] lg:w-[575px] lg:h-[398px]"
               class="max-w-xl w-[575px]"
               src="./asset/img/unsplash_vbxyFxlgpjM.png"
               alt=""
@@ -616,11 +633,12 @@
         </div>
       </section>
 
+      <!-- rekomendasi Kursus  -->
       <section>
         <!-- KURSUS -->
-        <div class="mt-36 border-b-2 mx-16">
+        <div class="mt-36 border-b-2 md:mx-10 lg:mx-16">
           <div class="flex items-center justify-between mb-7">
-            <h1 class="font-semibold text-3xl w-1/3 ">
+            <h1 class="font-semibold w-1/3 md:text-[28px] lg:text-[30px]">
               Rekomendasi Kursus Untuk Kamu
             </h1>
             <div class="flex gap-12">
@@ -646,7 +664,7 @@
               </div>
               <div>
                 <button
-                  class="font-medium bg-button border-solid hover:bg-yellow-600 py-4 px-10 rounded">
+                  class="font-medium bg-button border-solid hover:bg-yellow-600 rounded md:py-2 md:px-8 lg:py-4 lg:px-10">
                   Lihat Semua
                 </button>
               </div>
@@ -655,12 +673,12 @@
         </div>
 
         <!-- GAMBAR KURSUS -->
-        <div class="mt-16 grid grid-cols-3 max-w-7xl mx-16 gap-16">
+        <div class="mt-16 grid max-w-7xl mx-16 gap-16 md:grid-cols-2 lg:grid-cols-3">
           <!-- kursus 1 -->
           <div>
             <div class="relative">
               <img src="asset/img/unsplash_m_HRfLhgABo.png" alt=""/>
-              <div class="absolute top-52 right-3 z-10 ">
+              <div class="absolute z-10 md:top-[222px] md:right-7 lg:top-52 lg:right-3">
               <svg
                 width="63"
                 height="25"
@@ -684,17 +702,16 @@
               </div>
             </div>
 
-            <div class="py-6 px-4">
-              <h1 class="font-bold text-2xl">Dasar Pemrograman WEB</h1>
-              <p class="font-normal text-sm mb-6 text-accent">
+            <div class="md:py-5 md:px-3 lg:py-6 lg:px-4">
+              <h1 class="font-bold md:text-[24px] lg:text-[24px]">Dasar Pemrograman WEB</h1>
+              <p class="font-normal mb-6 text-accent md:text-[16px] lg:text-[16px]">
                 Materi pembelajarn mengenai pembuatan website tingkat pemula
               </p>
               <div class="flex gap-4 items-center text-accent">
-                <div class="flex gap-2">
+                <div class="flex items-center md:gap-1 lg:gap-2">
                   <span>
                     <svg
-                      width="20"
-                      height="20"
+                      class="md:w-[14px] lg:w-[20px]"
                       viewBox="0 0 20 20"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -708,13 +725,12 @@
                       />
                     </svg>
                   </span>
-                  <p class="font-normal text-sm">4,5 Jam</p>
+                  <p class="font-normal md:text-[14px] lg:text-[14px]">4,5 Jam</p>
                 </div>
-                <div class="flex gap-2 items-center">
+                <div class="flex items-center md:gap-1 lg:gap-2">
                   <span>
                     <svg
-                      width="24"
-                      height="24"
+                      class="md:w-[16px] lg:w-[24px]"
                       viewBox="0 0 24 24"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -737,13 +753,12 @@
                       </g>
                     </svg>
                   </span>
-                  <p class="font-normal text-sm">20 Video</p>
+                  <p class="font-normal md:text-[14px] lg:text-[14px]">20 Video</p>
                 </div>
-                <div class="flex gap-2">
+                <div class="flex items-center md:gap-1 lg:gap-2">
                   <span>
                     <svg
-                      width="18"
-                      height="18"
+                      class="md:w-[12px] lg:w-[20px]"
                       viewBox="0 0 18 18"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -757,7 +772,7 @@
                       />
                     </svg>
                   </span>
-                  <p class="font-normal text-sm">1.900 Siswa</p>
+                  <p class="font-normal md:text-[14px] lg:text-[14px]">900 Siswa</p>
                 </div>
               </div>
             </div>
@@ -767,7 +782,7 @@
           <div>
             <div class="relative">
               <img src="asset/img/pexels-lukas-590016 1.png" alt=""/>
-              <div class="absolute top-52 right-3 z-10 ">
+              <div class="absolute z-10 md:top-[222px] md:right-7 lg:top-52 lg:right-3 ">
               <svg
                 width="63"
                 height="25"
@@ -791,17 +806,16 @@
               </div>
             </div>
             
-            <div class="py-6 px-4">
-              <h1 class="font-bold text-2xl">Digital Marketing 101</h1>
-              <p class="font-normal text-sm mb-6 text-accent">
+            <div class="md:py-5 md:px-3 lg:py-6 lg:px-4">
+              <h1 class="font-bold md:text-[24px] lg:text-[24px]">Digital Marketing 101</h1>
+              <p class="font-normal mb-6 text-accent md:text-[16px] lg:text-[16px]">
               Materi mengenai strategi dan konsep marketing  pemula
               </p>
               <div class="flex gap-4 items-center text-accent">
-                <div class="flex gap-2">
+                <div class="flex items-center md:gap-1 lg:gap-2">
                   <span>
                     <svg
-                      width="20"
-                      height="20"
+                      class="md:w-[14px] lg:w-[20px]"
                       viewBox="0 0 20 20"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -815,13 +829,12 @@
                       />
                     </svg>
                   </span>
-                  <p class="font-normal text-sm">6,2 Jam</p>
+                  <p class="font-normal md:text-[14px] lg:text-[14px]">6,2 Jam</p>
                 </div>
-                <div class="flex gap-2 items-center">
+                <div class="flex items-center md:gap-1 lg:gap-2">
                   <span>
                     <svg
-                      width="24"
-                      height="24"
+                      class="md:w-[16px] lg:w-[24px]"
                       viewBox="0 0 24 24"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -844,13 +857,12 @@
                       </g>
                     </svg>
                   </span>
-                  <p class="font-normal text-sm">32 Video</p>
+                  <p class="font-normal md:text-[14px] lg:text-[14px]">32 Video</p>
                 </div>
-                <div class="flex gap-2">
+                <div class="flex items-center md:gap-1 lg:gap-2">
                   <span>
                     <svg
-                      width="18"
-                      height="18"
+                      class="md:w-[12px] lg:w-[20px]"
                       viewBox="0 0 18 18"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -864,7 +876,7 @@
                       />
                     </svg>
                   </span>
-                  <p class="font-normal text-sm">930 Siswa</p>
+                  <p class="font-normal md:text-[14px] lg:text-[14px]">930 Siswa</p>
                 </div>
               </div>
             </div>
@@ -874,7 +886,7 @@
          <div>
             <div class="relative">
               <img src="asset/img/pexels-olya-kobruseva-5561923 1.png" alt=""/>
-              <div class="absolute top-52 right-3 z-10 ">
+              <div class="absolute z-10 md:top-[222px] md:right-7 lg:top-52 lg:right-3">
               <svg
                 width="63"
                 height="25"
@@ -898,17 +910,16 @@
               </div>
             </div>
             
-            <div class="py-6 px-4">
-              <h1 class="font-bold text-2xl">Data Science Dasar</h1>
-              <p class="font-normal text-sm mb-6 text-accent">
+            <div class="md:py-5 md:px-3 lg:py-6 lg:px-4">
+              <h1 class="font-bold md:text-[24px] lg:text-[24px]">Data Science Dasar</h1>
+              <p class="font-normal mb-6 text-accent md:text-[16px] lg:text-[16px]">
                Materi pembelajaran mengenai dasar-dasar data science
               </p>
               <div class="flex gap-4 items-center text-accent">
-                <div class="flex gap-2">
+                <div class="flex items-center md:gap-1 lg:gap-2">
                   <span>
                     <svg
-                      width="20"
-                      height="20"
+                      class="md:w-[14px] lg:w-[20px]"
                       viewBox="0 0 20 20"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -922,13 +933,12 @@
                       />
                     </svg>
                   </span>
-                  <p class="font-normal text-sm">8 Jam</p>
+                  <p class="font-normal md:text-[14px] lg:text-[14px]">8 Jam</p>
                 </div>
-                <div class="flex gap-2 items-center">
+                <div class="flex items-center md:gap-1 lg:gap-2">
                   <span>
                     <svg
-                      width="24"
-                      height="24"
+                      class="md:w-[16px] lg:w-[24px]"
                       viewBox="0 0 24 24"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -951,13 +961,12 @@
                       </g>
                     </svg>
                   </span>
-                  <p class="font-normal text-sm">46 Video</p>
+                  <p class="font-normal md:text-[14px] lg:text-[14px]">46 Video</p>
                 </div>
-                <div class="flex gap-2">
+                <div class="flex items-center md:gap-1 lg:gap-2">
                   <span>
                     <svg
-                      width="18"
-                      height="18"
+                      class="md:w-[12px] lg:w-[20px]"
                       viewBox="0 0 18 18"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -971,7 +980,7 @@
                       />
                     </svg>
                   </span>
-                  <p class="font-normal text-sm">1.043 Siswa</p>
+                  <p class="font-normal md:text-[14px] lg:text-[14px]">1.043 Siswa</p>
                 </div>
               </div>
             </div>
@@ -979,17 +988,17 @@
       </section>
 
       <!--ulasan -->
-      <section>
-        <div class=" bg-layar mt-40 ">
-          <div class="mx-16 flex gap-[104px] pt-[85px] pb-[80px]">
+      <section class="hidden">
+        <div class=" bg-layar mt-40">
+          <div class="flex pt-[85px] pb-[80px] md:gap-[20px] md:mx-10 lg:gap-[104px] lg:mx-16">
           <div class="w-3/4">
-            <h1 class="font-semibold text-[28px]">Kata Mereka Tentang Kursus EDUFREE</h1>
+            <h1 class="font-semibold md:text-[22px] lg:text-[28px]">Kata Mereka Tentang Kursus EDUFREE</h1>
             <p class="font-normal text-[16px] text-accent w-4/5">EDUFREE telah dipercaya lebih dari 10.000 siswa  </p>
           </div>
 
           <div>
             <div class="mb-7">
-              <h2 class="font-medium text-[26px] text-justify">"Materi yang disampaikan mudah dimengerti, kualitas instruktur sangat baik serta  responnya yang cepat. So, kursus disini sangat sangat saya rekomendasikan!!"</h2>
+              <h2 class="font-medium text-justify md:text-[18px] lg:text-[26px]">"Materi yang disampaikan mudah dimengerti, kualitas instruktur sangat baik serta  responnya yang cepat. So, kursus disini sangat sangat saya rekomendasikan!!"</h2>
             </div>
             <div class="flex items-center">
                 <div class="ml-2">
@@ -999,7 +1008,7 @@
                   <h1 class="font-medium text-lg">Jenny Wilson</h1>
                   <p class="font-medium text-xs">Vice President</p>
                 </div>
-               <div class="ml-[440px]">
+               <div class="md:ml-[240px] lg:ml-[440px]">
                 <svg width="132" height="16" viewBox="0 0 132 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="124" cy="8" r="8" fill="#2405F2" fill-opacity="0.4"/>
                 <circle cx="95" cy="8" r="8" fill="#2405F2" fill-opacity="0.4"/>
@@ -1015,53 +1024,53 @@
       </section>
       
       <!-- pertanyaan -->
-       <section>
-        <div class="flex mt-[152px] mx-16 gap-[109px]">
+       <section class="hidden">
+        <div class="flex mt-[152px] gap-[109px] md:mx-10 lg:mx-16">
           <div>
-            <h1 class="text-[28px] font-semibold w-[328px]">Frequently Asked Questions</h1>
-            <p class="text-[16px] text-accent w-[327px]">Masih bingung atau ragu? Hubungi kami di nomor  +6288 999 222 333</p>
+            <h1 class="font-semibold md:w-[228px] md:text-[24px] lg:w-[328px] lg:text-[28px]">Frequently Asked Questions</h1>
+            <p class="text-accent md:w-[227px] md:text-[14px] lg:w-[327px] lg:text-[16px]">Masih bingung atau ragu? Hubungi kami di nomor  +6288 999 222 333</p>
           </div>
-          <div class="w-[1286px]">
+          <div class="md:w-[600px] lg:w-[1286px]">
             <div class="border-b-2">
               <div class="flex items-center mb-[18px]">
-                <p class="text-2xl font-medium text-number mr-[59px]">01</p>
-                <h1 class="text-2xl font-medium w-full ">Apakah kursus ini benar-benar gratis?</h1>
+                <p class="font-medium text-number mr-[59px] md:text-[20px] lg:text-[24px]">01</p>
+                <h1 class="font-medium w-full md:text-[20px] lg:text-[24px]">Apakah kursus ini benar-benar gratis?</h1>
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.5 1.5L12.5 12.5M1.5 12.5L12.5 1.5L1.5 12.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
               <div>
-                  <p class="text-lg font-medium text-accent  w-[624px] ml-[83px] mb-12">Kursus yang disediakan bisa diakses gratis untuk menunjang kebutuhan dalam bidang kependidikan.</p>
+                  <p class="font-medium text-accent ml-[83px] mb-12 lg:w-[624px] lg:text[18px]">Kursus yang disediakan bisa diakses gratis untuk menunjang kebutuhan dalam bidang kependidikan.</p>
               </div>
             </div>
 
             <div class="flex items-center py-8 border-b-2">
-              <p class="text-2xl font-medium text-number mr-[54px]">02</p>
-              <h1 class="text-2xl font-medium w-full">Untuk siapa kursus ini?</h1>
+              <p class="font-medium text-number mr-[54px] md:text-[20px] lg:text-[24px]">02</p>
+              <h1 class="font-medium w-full md:text-[20px] lg:text-[24px]">Untuk siapa kursus ini?</h1>
               <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.80746 9H17.3638M9.58564 16.7782V1.22183V16.7782Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
 
             <div class="flex items-center py-8 border-b-2">
-              <p class="text-2xl font-medium text-number mr-[54px]">03</p>
-              <h1 class="text-2xl font-medium w-full">Apakah kursus ini bersertifikat?</h1>
+              <p class="font-medium text-number mr-[54px] md:text-[20px] lg:text-[24px]">03</p>
+              <h1 class="font-medium w-full md:text-[20px] lg:text-[24px]">Apakah kursus ini bersertifikat?</h1>
               <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.80746 9H17.3638M9.58564 16.7782V1.22183V16.7782Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
 
             <div class="flex items-center py-8 border-b-2">
-              <p class="text-2xl font-medium text-number mr-[54px]">04</p>
-              <h1 class="text-2xl font-medium w-full">Sampai kapan kursus ini berakhir?</h1>
+              <p class="font-medium text-number mr-[54px] md:text-[20px] lg:text-[24px]">04</p>
+              <h1 class="font-medium w-full md:text-[20px] lg:text-[24px]">Sampai kapan kursus ini berakhir?</h1>
               <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.80746 9H17.3638M9.58564 16.7782V1.22183V16.7782Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
 
             <div class="flex items-center py-8 border-b-2">
-              <p class="text-2xl font-medium text-number mr-[54px]">05</p>
-              <h1 class="text-2xl font-medium w-full">Apakah ada penyaluran kerja setelah lulus?</h1>
+              <p class="font-medium text-number mr-[54px] md:text-[20px] lg:text-[24px]">05</p>
+              <h1 class="font-medium w-full md:text-[20px] lg:text-[24px]">Apakah ada penyaluran kerja setelah lulus?</h1>
               <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.80746 9H17.3638M9.58564 16.7782V1.22183V16.7782Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -1071,20 +1080,20 @@
        </section>
 
        <!-- daftar -->
-       <section>
-          <div class="flex mt-[248px] mx-16 bg-gray-500 h-[640px]">
+       <section class="hidden">
+          <div class="flex bg-gray-500 h-[640px] md:mx-10 lg:mx-16 md:mt-[148px] lg:mt-[248px]">
             <div class="relative w-full bg-primary">
               <img class="h-[640px] w-full opacity-60" src="./asset/img/bg-card.png" alt="">
-              <div class="absolute top-[75px] left-[75px] w-[444px]">
-                <h2 class="font-semibold text-[42px] mb-[24px] text-secondary">Selangkah Lebih Dekat Dengan Impianmu</h2>
+              <div class="absolute md:top-[65px] md:left-[45px] md:w-[344px] lg:top-[75px] lg:left-[75px] lg:w-[444px]">
+                <h2 class="font-semibold mb-[24px] text-secondary md:text-[32px] lg:text-[42px]">Selangkah Lebih Dekat Dengan Impianmu</h2>
                 <p class="text-secondary">Sebuah layanan E-Learning gratis yang siap membantumu menjadi seorang ahli </p>
               </div>
             </div>
             <div class="bg-primary w-full">
-              <div class="w-[432px] my-[60px] mx-[101px]">
+              <div class="md:my-[40px] md:mx-[80px] lg:my-[60px] lg:mx-[101px] lg:w-[432px]">
                 <div>
-                  <h2 class="font-semibold text-[28px] text-secondary mb-[16px]">Daftarkan Dirimu!</h2>
-                  <p class="font-normal text-secondary mb-[48px]">Persiapkan diri untuk masa depan yang penuh dengan bintang</p>
+                  <h2 class="font-semibold text-secondary mb-[16px] md:text-[26px] lg:text-[28px]">Daftarkan Dirimu!</h2>
+                  <p class="font-normal text-secondary mb-[48px] md:text-[14px] lg:text-[16px]">Persiapkan diri untuk masa depan yang penuh dengan bintang</p>
                 </div>
 
                 <form action="">
@@ -1110,11 +1119,11 @@
        </section>
 
        <!-- Blog, Berita dan Event -->
-       <section>
-        <div class="mx-16 mt-[161px]">
+       <section class="hidden">
+        <div class="mt-[161px] md:mx-10 lg:mx-16">
           <div class="flex justify-between">
             <div>
-              <h2 class="font-semibold text-[38px]">Blog, Berita dan Event</h2>
+              <h2 class="font-semibold md:text-[28px] lg:text-[38px]">Blog, Berita dan Event</h2>
             </div>
             <div class="flex items-center gap-[8px]">
               <p>Lihat Semua</p>
@@ -1125,7 +1134,7 @@
               </span>
             </div>
           </div>
-          <div class="mt-[64px] grid grid-cols-3 gap-[43px]">
+          <div class="mt-[64px] grid md:gap-[80px] md:grid-cols-2 lg:gap-[43px] lg:grid-cols-3">
             <div class="w-[390px]">
               <img src="./asset/img/arabic-businessman-standing-on-street-and-using-laptop-9623794.png" alt="">
               <p class="tetx-[16px] text-accent mt-[40px]">19 Jan 2022</p>
@@ -1166,34 +1175,34 @@
        </section>
 
        <!-- media social -->
-       <section>
+       <section class="hidden">
         <div class="bg-primary mt-[198px] relative">
-          <div class="flex p-[70px] justify-between">
+          <div class="flex justify-between md:mx-10 md:py-[60px] lg:p-[70px]">
             <div>
-              <h2 class="text-secondary font-bold text-[24px] mb-[11px]">[EDUFREE]</h2>
-              <p class="text-secondary font-normal text-[16px] w-[327px]">Bangun dan wujudkan cita bersama edufree</p>
+              <h2 class="text-secondary font-bold mb-[11px] md:text-[20px] lg:text-[24px]">[EDUFREE]</h2>
+              <p class="text-secondary font-normal w-[327px] md:text-[14px] lg:text-[16px]">Bangun dan wujudkan cita bersama edufree</p>
             </div>
-            <div class="flex gap-[99px] mb-[64px]">
+            <div class="flex mb-[64px] md:gap-[60px] lg:gap-[99px]">
               <div>
-                <h3 class="text-secondary font-medium text-[20px] mb-[21px]">Sosial Media</h3>
-                <p class="text-secondary text-[18px] font-light">Instagram</p>
-                <p class="text-secondary text-[18px] font-light">Twitter</p>
-                <p class="text-secondary text-[18px] font-light">LinkedIn</p>
+                <h3 class="text-secondary font-medium mb-[21px] md:text-[18px] lg:text-[20px]">Sosial Media</h3>
+                <p class="text-secondary font-light md:text-[16px] lg:text-[18px]">Instagram</p>
+                <p class="text-secondary font-light md:text-[16px] lg:text-[18px]">Twitter</p>
+                <p class="text-secondary font-light md:text-[16px] lg:text-[18px]">LinkedIn</p>
               </div>
               <div>
-                <h3 class="text-secondary font-medium text-[20px] mb-[21px]">Program</h3>
-                <p class="text-secondary text-[18px] font-light">Merdeka Belajar</p>
-                <p class="text-secondary text-[18px] font-light">Finterpreneur</p>
+                <h3 class="text-secondary font-medium mb-[21px] md:text-[18px] lg:text-[20px]">Program</h3>
+                <p class="text-secondary font-light md:text-[16px] lg:text-[18px]">Merdeka Belajar</p>
+                <p class="text-secondary font-light md:text-[16px] lg:text-[18px]">Finterpreneur</p>
               </div>
               <div>
-                <h3 class="text-secondary font-medium text-[20px] mb-[21px]">DUKUNGAN</h3>
-                <p class="text-secondary text-[18px] font-light">Tentang Kami</p>
-                <p class="text-secondary text-[18px] font-light">Ketentuan</p>
-                <p class="text-secondary text-[18px] font-light">Kebijakan Privasi</p>
+                <h3 class="text-secondary font-medium mb-[21px] md:text-[18px] lg:text-[20px]">DUKUNGAN</h3>
+                <p class="text-secondary font-light md:text-[16px] lg:text-[18px]">Tentang Kami</p>
+                <p class="text-secondary font-light md:text-[16px] lg:text-[18px]">Ketentuan</p>
+                <p class="text-secondary font-light md:text-[16px] lg:text-[18px]">Kebijakan Privasi</p>
               </div>
             </div>
           </div>
-         <div class="flex gap-[29px] bg-button py-[15px] px-[30px] w-[420px] rounded-t-lg absolute bottom-0 left-[69px]">
+         <div class="flex gap-[29px] bg-button py-[15px] px-[30px] w-[420px] rounded-t-lg absolute bottom-0 md:left-[40px] lg:left-[69px]">
           <div>
             <h2 class="font-medium text-[18px] mb-[6px]">Email</h2>
             <p class="font-normal text-[16px] text-accent">contact@website.com</p>
@@ -1206,12 +1215,12 @@
         </div>
        </section>
     </main>
-    <footer>
-      <div class="flex mx-16 justify-between py-[27px]">
+    <footer class="hidden">
+      <div class="flex justify-between py-[27px] md:mx-10 lg:mx-16">
         <div>
           <h2 class="font-medium text-[18px]">&copy; Copyright EDUFREE 2021 - 2022</h2>
         </div>
-        <div class="flex flex-row gap-[35px] font-medium text-[16px]">
+        <div class="flex flex-row font-medium text-[16px] md:gap-[25px] lg:gap-[35px]">
           <a href="">HOME</a>
           <a href="">TENTANG KAMI</a>
           <a href="">KURSUS</a>
