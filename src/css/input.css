@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme{
+    --color-primary: #1c1e53;
+    --color-secondary: #ffffff;
+    --color-img: #1c1e53;
+    --color-accent: #282938;
+    --color-number: #2405F2;
+    --color-border: #ececf1;
+    --color-button: #fcd980;
+    --color-layar: #eef4fa;
+    --color-card: #f4f6fc;
+    --font-poppins: "poppins", sans-serif;
+
+}
